@@ -2,14 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href=https://stitches.hyperyolo.com/output.css rel="stylesheet">
+    <link rel="stylesheet" href=https://use.fontawesome.com/releases/v5.6.3/css/all.css integrity=sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/ crossorigin="anonymous">
+    <title>Stitches</title>
 </head>
 <body>
-    <img src="https://www.thescoop.co.kr/news/photo/202006/39756_54987_1115.jpg", alt="backgroud">
+    <nav class="font-sans bg-white text-center flex justify-between my-4 mx-auto container overflow-hidden">
+    <a href="/" class="block text-left">
+    <img src="data:image/png;base64,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" class="h-10 sm:h-10 rounded-full" alt="logo">
+    </a>
+        <ul class="text-sm text-gray-700 list-none p-0 flex items-center">
+            <li><a href="#" class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">데이터셋</a></li>
+            <li><a href="#" class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">개발자</a></li>
+            <li class="pr-2"><a href="#"
+                class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">FAQs</a></li>
+            <li class="pl-2 border-l"><a href="#"
+                class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">Log In</a></li>
+            <button class="bg-black hover:bg-text-gray-800 text-white ml-4 py-2 px-3">
+            Sign Up
+            </button>
+        </ul>
+    </nav>
+    <hr>
 
     <br>
-    <img src="https://postfiles.pstatic.net/MjAyMDA5MjVfNjIg/MDAxNjAwOTc0MTE3OTc1.Lij87WSLxxgKuvb1orFuhrGZ2cCBoct70axUf2jmw4Ig.gYXiR4O2xMfX6Qp_l6N_n1WaI-dBO7UyN9wso_Zziisg.PNG.simonmatthew/%ED%83%80%EC%9D%B4%ED%8B%80.PNG?type=w773", alt="title">
-
+    <div>
+        <img src="data:image/png;base64,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", alt="title", aligh='middle', float='left'>
+        <p class="uppercase tracking-loose font-bold text-5xl my-2">거기 어때?</p>
+    </div>
     <br>
     <input type="radio" name="chk_info" value="남구">남구
     <input type="radio" name="chk_info" value="북구">북구
@@ -38,8 +60,116 @@
         </button>
     </form>
 
+<section class="font-sans container m-auto max-w-xl flex flex-col flex-wrap sm:flex-row justify-center">
+  <div class="w-full sm:w-1/2 lg:w-1/4 text-center py-8">
+    <h1 for="" class="uppercase tracking-loose font-bold text-3xl my-2">남구<span class="text-gray-700 font-light text-xs"></span></h1>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    문화
+    </button>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    치안
+    </button>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    공부
+    </button>
+  </div>
+  <div class="w-full sm:w-1/2 lg:w-1/4 text-center py-8">
+    <h1 for="" class="uppercase tracking-loose font-bold text-3xl my-2">북구<span class="text-gray-700 font-light text-xs"></span></h1>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    문화
+    </button>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    치안
+    </button>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    공부
+    </button>
+  </div>
+  <div class="w-full sm:w-1/2 lg:w-1/4 text-center py-8">
+    <h1 for="" class="uppercase tracking-loose font-bold text-3xl my-2">서구<span class="text-gray-700 font-light text-xs"></span></h1>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    문화
+    </button>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    치안
+    </button>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    공부
+    </button>
+  </div>
+  <div class="w-full sm:w-1/2 lg:w-1/4 text-center py-8">
+    <h1 for="" class="uppercase tracking-loose font-bold text-3xl my-2">광산구<span class="text-gray-700 font-light text-xs"></span></h1>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    문화
+    </button>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    치안
+    </button>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    공부
+    </button>
+  </div>
+  <div class="w-full sm:w-1/2 lg:w-1/4 text-center py-8">
+    <h1 for="" class="uppercase tracking-loose font-bold text-3xl my-2">동구<span class="text-gray-700 font-light text-xs"></span></h1>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    문화
+    </button>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    치안
+    </button>
+    <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">
+    공부
+    </button>
+  </div>
+</section>
 
 
 
+<footer class="font-sans bg-black text-white py-8 px-4">
+  <div class="mx-auto container overflow-hidden flex flex-col lg:flex-row justify-between">
+    <a href="/" class="block mr-4 w-1/2">
+      <img src="https://stitches.hyperyolo.com/images/logo-white.png" class="w-32" alt="logo">
+    </a>
+    <div class="w-1/2 flex text-sm mt-6 lg:mt-0">
+      <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left">
+        <li class="inline-block py-2 px-3 text-white uppercase no-underline font-medium tracking-wide">Product</li>
+        <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Popular</a></li>
+        <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Trending</a></li>
+        <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Catalog</a></li>
+        <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Features</a></li>
+      </ul>
+      <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left">
+        <li class="inline-block py-2 px-3 text-white uppercase no-underline font-medium tracking-wide">Company</li>
+        <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Press Release</a>
+        </li>
+        <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Mission</a></li>
+        <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Strategy</a></li>
+        <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Works</a></li>
+      </ul>
+      <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left">
+        <li class="inline-block py-2 px-3 text-white uppercase no-underline font-medium tracking-wide">Info</li>
+        <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Support</a></li>
+        <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Developers</a></li>
+        <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Customer
+            Services</a></li>
+        <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Started Guide</a>
+        </li>
+      </ul>
+      <div class="text-gray-700 flex flex-col">
+        <div class="inline-block py-2 px-3 text-white uppercase font-medium tracking-wide">Follow Us</div>
+        <div class="flex pl-4 justify-start">
+          <a class="block flex items-center text-white hover:text-gray-500 mr-6 no-underline" href="#"><i
+              class="fab fa-github-alt"></i></a>
+          <a class="block flex items-center text-white hover:text-gray-500 mr-6 no-underline" href="#"><i
+              class="fab fa-slack"></i></a>
+          <a class="block flex items-center text-white hover:text-gray-500 no-underline" href="#"><i
+              class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pt-4 mt-4 text-gray-700 border-t border-gray-900 text-center"> ©2019 Hyperyolo. All rights
+    reserved.</div>
+</footer>
 </body>
 </html>
