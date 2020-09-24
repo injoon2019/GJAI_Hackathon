@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_10b1a97a62294e6d8d33bb89c415923f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_10b1a97a62294e6d8d33bb89c415923f" ></div>
+        
+</body>
+<script>    
+    
+            var map_10b1a97a62294e6d8d33bb89c415923f = L.map(
+                "map_10b1a97a62294e6d8d33bb89c415923f",
+                {
+                    center: [35.1595, 126.8526],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_43b0a041c9fa474581c419ac61804fd5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_10b1a97a62294e6d8d33bb89c415923f);
+        
+    
+            var marker_cluster_9efdac99eb664adc8fb3c36647dc9d55 = L.markerClusterGroup(
+                {}
+            );
+            map_10b1a97a62294e6d8d33bb89c415923f.addLayer(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+            var marker_ad6abfdfb6c9454f87e3154b9f118d64 = L.marker(
+                [35.1793136885126, 126.876817405451],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_c66209a6070844dea4cbfe7c13e3b3a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd04b7e7ecb3486aa5ba605690167027 = $(`<div id="html_cd04b7e7ecb3486aa5ba605690167027" style="width: 100.0%; height: 100.0%;">광주 북구 북문대로98번길 5 동운지구대 임시청사</div>`)[0];
+            popup_c66209a6070844dea4cbfe7c13e3b3a8.setContent(html_cd04b7e7ecb3486aa5ba605690167027);
+        
+
+        marker_ad6abfdfb6c9454f87e3154b9f118d64.bindPopup(popup_c66209a6070844dea4cbfe7c13e3b3a8)
+        ;
+
+        
+    
+    
+            var marker_5cd59991aef7496d92b340f996557bba = L.marker(
+                [35.2185454491755, 126.879690670979],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_a8fb0fcb9615411a9b4fdc436cf1be5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c4f450c7b574a0c88ea66adea89fcee = $(`<div id="html_5c4f450c7b574a0c88ea66adea89fcee" style="width: 100.0%; height: 100.0%;">광주 북구 본촌마을길102번길 17 건국파출소</div>`)[0];
+            popup_a8fb0fcb9615411a9b4fdc436cf1be5a.setContent(html_5c4f450c7b574a0c88ea66adea89fcee);
+        
+
+        marker_5cd59991aef7496d92b340f996557bba.bindPopup(popup_a8fb0fcb9615411a9b4fdc436cf1be5a)
+        ;
+
+        
+    
+    
+            var marker_9405d029e9f847c78a1f3bb252bcd592 = L.marker(
+                [35.1429699779915, 126.915239710821],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_4ca34f257256419195c397dfd72d957b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9438365351674a78a245286a5d816cb9 = $(`<div id="html_9438365351674a78a245286a5d816cb9" style="width: 100.0%; height: 100.0%;">광주 남구 천변좌로 410 양림파출소</div>`)[0];
+            popup_4ca34f257256419195c397dfd72d957b.setContent(html_9438365351674a78a245286a5d816cb9);
+        
+
+        marker_9405d029e9f847c78a1f3bb252bcd592.bindPopup(popup_4ca34f257256419195c397dfd72d957b)
+        ;
+
+        
+    
+    
+            var marker_cce84723f56e48b6a6b39cb076bfd32a = L.marker(
+                [35.1447119000327, 126.803118873756],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_6233ec6db3524a54adcea46b64da0990 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_397f008f570a4c1eb7745468a32ac726 = $(`<div id="html_397f008f570a4c1eb7745468a32ac726" style="width: 100.0%; height: 100.0%;">광주 광산구 신흥신기안길 31-6 송정파출소</div>`)[0];
+            popup_6233ec6db3524a54adcea46b64da0990.setContent(html_397f008f570a4c1eb7745468a32ac726);
+        
+
+        marker_cce84723f56e48b6a6b39cb076bfd32a.bindPopup(popup_6233ec6db3524a54adcea46b64da0990)
+        ;
+
+        
+    
+    
+            var marker_03893e356c844aea9b067366f8f1957f = L.marker(
+                [35.1709275625627, 126.864417818532],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_9e5ca763db71486080a1d655e026645b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b52b62d5b2e84870adcb498a39df81d9 = $(`<div id="html_b52b62d5b2e84870adcb498a39df81d9" style="width: 100.0%; height: 100.0%;">광주 서구 유림로98번길 6</div>`)[0];
+            popup_9e5ca763db71486080a1d655e026645b.setContent(html_b52b62d5b2e84870adcb498a39df81d9);
+        
+
+        marker_03893e356c844aea9b067366f8f1957f.bindPopup(popup_9e5ca763db71486080a1d655e026645b)
+        ;
+
+        
+    
+    
+            var marker_7702c6881b9a44f187e8425df1afd227 = L.marker(
+                [35.1741616486958, 126.933155334527],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_f797dddb39de445d800c83180785501e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7067f5444df8410887bceef6a511a501 = $(`<div id="html_7067f5444df8410887bceef6a511a501" style="width: 100.0%; height: 100.0%;">광주 북구 군왕로 146 두암파출소</div>`)[0];
+            popup_f797dddb39de445d800c83180785501e.setContent(html_7067f5444df8410887bceef6a511a501);
+        
+
+        marker_7702c6881b9a44f187e8425df1afd227.bindPopup(popup_f797dddb39de445d800c83180785501e)
+        ;
+
+        
+    
+    
+            var marker_b7a558f925d846e2820e5c7751ea2aea = L.marker(
+                [35.1290127747844, 126.78542094162],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_10daf00fe8c04ce495f79c3e84d433db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c842ecf42c464b9194da5862b68423b7 = $(`<div id="html_c842ecf42c464b9194da5862b68423b7" style="width: 100.0%; height: 100.0%;">광주 광산구 상무대로 93 광산경찰서송정지구대</div>`)[0];
+            popup_10daf00fe8c04ce495f79c3e84d433db.setContent(html_c842ecf42c464b9194da5862b68423b7);
+        
+
+        marker_b7a558f925d846e2820e5c7751ea2aea.bindPopup(popup_10daf00fe8c04ce495f79c3e84d433db)
+        ;
+
+        
+    
+    
+            var marker_6eb1dd205d0c46598dd6724543c87d9a = L.marker(
+                [35.1408590193522, 126.919924144675],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_86e94b7dfd5f4749adca654db60f2eb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6aa7504dd75f4a4793829361fd428562 = $(`<div id="html_6aa7504dd75f4a4793829361fd428562" style="width: 100.0%; height: 100.0%;">광주 동구 양림로119번길 13</div>`)[0];
+            popup_86e94b7dfd5f4749adca654db60f2eb8.setContent(html_6aa7504dd75f4a4793829361fd428562);
+        
+
+        marker_6eb1dd205d0c46598dd6724543c87d9a.bindPopup(popup_86e94b7dfd5f4749adca654db60f2eb8)
+        ;
+
+        
+    
+    
+            var marker_c6e8498da6da4d0cb54b7ac7621776be = L.marker(
+                [35.1504439093423, 126.89032886989],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_9a54461182f249558c028d4a82af6c90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8dd871e8693940c783d1bd2de9414925 = $(`<div id="html_8dd871e8693940c783d1bd2de9414925" style="width: 100.0%; height: 100.0%;">광주 서구 화정로 316 농성지구대</div>`)[0];
+            popup_9a54461182f249558c028d4a82af6c90.setContent(html_8dd871e8693940c783d1bd2de9414925);
+        
+
+        marker_c6e8498da6da4d0cb54b7ac7621776be.bindPopup(popup_9a54461182f249558c028d4a82af6c90)
+        ;
+
+        
+    
+    
+            var marker_f9fde42fd36d4480b19e7ed6e9d85f1c = L.marker(
+                [35.1566171460197, 126.932007736625],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_09b866fccdf7448584d8c9c59d1310ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9a98e803b004c978513947d43944ffc = $(`<div id="html_c9a98e803b004c978513947d43944ffc" style="width: 100.0%; height: 100.0%;">광주 동구 필문대로 157</div>`)[0];
+            popup_09b866fccdf7448584d8c9c59d1310ae.setContent(html_c9a98e803b004c978513947d43944ffc);
+        
+
+        marker_f9fde42fd36d4480b19e7ed6e9d85f1c.bindPopup(popup_09b866fccdf7448584d8c9c59d1310ae)
+        ;
+
+        
+    
+    
+            var marker_751d6f16cc284e29abedb8d3f0ee7b55 = L.marker(
+                [35.1847442032955, 126.794526029304],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_3f7801a804d243b7ad85fd67acd525c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7569b1a1d00418780ecabbd1b213300 = $(`<div id="html_e7569b1a1d00418780ecabbd1b213300" style="width: 100.0%; height: 100.0%;">광주 광산구 고봉로 124</div>`)[0];
+            popup_3f7801a804d243b7ad85fd67acd525c7.setContent(html_e7569b1a1d00418780ecabbd1b213300);
+        
+
+        marker_751d6f16cc284e29abedb8d3f0ee7b55.bindPopup(popup_3f7801a804d243b7ad85fd67acd525c7)
+        ;
+
+        
+    
+    
+            var marker_15a51f037fba4cdfa4935fe117f10962 = L.marker(
+                [35.1415989590487, 126.879253690966],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_97e71f65f7d0422e998cbfabf4c482ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53c1509238ef4527af3b3ebee4acf534 = $(`<div id="html_53c1509238ef4527af3b3ebee4acf534" style="width: 100.0%; height: 100.0%;">광주 서구 염화로134번길 18</div>`)[0];
+            popup_97e71f65f7d0422e998cbfabf4c482ce.setContent(html_53c1509238ef4527af3b3ebee4acf534);
+        
+
+        marker_15a51f037fba4cdfa4935fe117f10962.bindPopup(popup_97e71f65f7d0422e998cbfabf4c482ce)
+        ;
+
+        
+    
+    
+            var marker_35d0ca0d71164a469bdf42cf65889b18 = L.marker(
+                [35.1243959031987, 126.878889835802],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_7d81ea201d504bd4ad43e5ded6ecebdc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d87af574a60d4d57bf3339ba52d841b4 = $(`<div id="html_d87af574a60d4d57bf3339ba52d841b4" style="width: 100.0%; height: 100.0%;">광주 서구 풍암1로 33</div>`)[0];
+            popup_7d81ea201d504bd4ad43e5ded6ecebdc.setContent(html_d87af574a60d4d57bf3339ba52d841b4);
+        
+
+        marker_35d0ca0d71164a469bdf42cf65889b18.bindPopup(popup_7d81ea201d504bd4ad43e5ded6ecebdc)
+        ;
+
+        
+    
+    
+            var marker_f008462a34114971add72594e3edfa14 = L.marker(
+                [35.221688915418, 126.82382769666],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_e1fcd8b459854d6fb8a47f4730ec8cae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ceaf81f15ea4023a162c727760a7c08 = $(`<div id="html_8ceaf81f15ea4023a162c727760a7c08" style="width: 100.0%; height: 100.0%;">광주 광산구 비아중앙로31번길 14</div>`)[0];
+            popup_e1fcd8b459854d6fb8a47f4730ec8cae.setContent(html_8ceaf81f15ea4023a162c727760a7c08);
+        
+
+        marker_f008462a34114971add72594e3edfa14.bindPopup(popup_e1fcd8b459854d6fb8a47f4730ec8cae)
+        ;
+
+        
+    
+    
+            var marker_59bc8b4c3633459e9e606d54f83c27a7 = L.marker(
+                [35.1339598079847, 126.893463689462],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_a8801837c47944b9878753ef24b05f96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07f14faee2c94a33a0c1027073b821a5 = $(`<div id="html_07f14faee2c94a33a0c1027073b821a5" style="width: 100.0%; height: 100.0%;">광주 남구 회재로1217번길 7</div>`)[0];
+            popup_a8801837c47944b9878753ef24b05f96.setContent(html_07f14faee2c94a33a0c1027073b821a5);
+        
+
+        marker_59bc8b4c3633459e9e606d54f83c27a7.bindPopup(popup_a8801837c47944b9878753ef24b05f96)
+        ;
+
+        
+    
+    
+            var marker_34d0d4e6a17d45c9b7e4bb99756e62ca = L.marker(
+                [35.1494412158379, 126.942787185615],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_59ad644a3e6c493685d2fbb7bc218345 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f27c7cd1a2db4dd8a925bece046ed314 = $(`<div id="html_f27c7cd1a2db4dd8a925bece046ed314" style="width: 100.0%; height: 100.0%;">광주 동구 지호로 131</div>`)[0];
+            popup_59ad644a3e6c493685d2fbb7bc218345.setContent(html_f27c7cd1a2db4dd8a925bece046ed314);
+        
+
+        marker_34d0d4e6a17d45c9b7e4bb99756e62ca.bindPopup(popup_59ad644a3e6c493685d2fbb7bc218345)
+        ;
+
+        
+    
+    
+            var marker_a50fb4f9bd2542e8a8454ba9d6668f4a = L.marker(
+                [35.2138834128084, 126.948832288376],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_26a8df40b6234b468d227ab6611d99c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98ba2d97096d4ae3b3c07418641d8f1b = $(`<div id="html_98ba2d97096d4ae3b3c07418641d8f1b" style="width: 100.0%; height: 100.0%;">광주 북구 동문대로 642</div>`)[0];
+            popup_26a8df40b6234b468d227ab6611d99c9.setContent(html_98ba2d97096d4ae3b3c07418641d8f1b);
+        
+
+        marker_a50fb4f9bd2542e8a8454ba9d6668f4a.bindPopup(popup_26a8df40b6234b468d227ab6611d99c9)
+        ;
+
+        
+    
+    
+            var marker_1adde65fe0244194b332c75935f47725 = L.marker(
+                [35.1221062157263, 126.933445056458],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_d49eac29041f4085af54b0a8d5eef8d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3fecc8dc8664440d8602143843cf5c0b = $(`<div id="html_3fecc8dc8664440d8602143843cf5c0b" style="width: 100.0%; height: 100.0%;">광주 동구 남문로 570</div>`)[0];
+            popup_d49eac29041f4085af54b0a8d5eef8d2.setContent(html_3fecc8dc8664440d8602143843cf5c0b);
+        
+
+        marker_1adde65fe0244194b332c75935f47725.bindPopup(popup_d49eac29041f4085af54b0a8d5eef8d2)
+        ;
+
+        
+    
+    
+            var marker_01344710b5fe4643b1e4b52b93133408 = L.marker(
+                [35.0802347464648, 126.83455742254],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_4138cb2be4a3410f99d550d114486c05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a24ea6701fba4f9da548463decd09e99 = $(`<div id="html_a24ea6701fba4f9da548463decd09e99" style="width: 100.0%; height: 100.0%;">광주 남구 고싸움로 136 대촌파출소</div>`)[0];
+            popup_4138cb2be4a3410f99d550d114486c05.setContent(html_a24ea6701fba4f9da548463decd09e99);
+        
+
+        marker_01344710b5fe4643b1e4b52b93133408.bindPopup(popup_4138cb2be4a3410f99d550d114486c05)
+        ;
+
+        
+    
+    
+            var marker_4235ca16788b49478ef86f9e05d9ac5b = L.marker(
+                [35.124207774752, 126.759757587353],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_5058a3a81b0a4b44a10e773fa2e0bacd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e9ffd379c9640e68d24a11da77b451c = $(`<div id="html_0e9ffd379c9640e68d24a11da77b451c" style="width: 100.0%; height: 100.0%;">광주 광산구 평동로 790-16</div>`)[0];
+            popup_5058a3a81b0a4b44a10e773fa2e0bacd.setContent(html_0e9ffd379c9640e68d24a11da77b451c);
+        
+
+        marker_4235ca16788b49478ef86f9e05d9ac5b.bindPopup(popup_5058a3a81b0a4b44a10e773fa2e0bacd)
+        ;
+
+        
+    
+    
+            var marker_f4607304aee84f1cb29e65aef1a797f6 = L.marker(
+                [35.2252196236412, 126.899392611492],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_9d1ef0ba45be48a5b12d71b53f793c71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94991f1131ba452395f8c49821fa0d29 = $(`<div id="html_94991f1131ba452395f8c49821fa0d29" style="width: 100.0%; height: 100.0%;">광주 북구 생용동 107-1</div>`)[0];
+            popup_9d1ef0ba45be48a5b12d71b53f793c71.setContent(html_94991f1131ba452395f8c49821fa0d29);
+        
+
+        marker_f4607304aee84f1cb29e65aef1a797f6.bindPopup(popup_9d1ef0ba45be48a5b12d71b53f793c71)
+        ;
+
+        
+    
+    
+            var marker_2e1bb05243c64250be461ead958945f5 = L.marker(
+                [35.1439030089947, 126.989013592794],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_a1a4b3ca2554439ca7738ea975e719d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5de33ee8f16c47cba4e4591c1b1e48cf = $(`<div id="html_5de33ee8f16c47cba4e4591c1b1e48cf" style="width: 100.0%; height: 100.0%;">광주 북구 무등로 1550</div>`)[0];
+            popup_a1a4b3ca2554439ca7738ea975e719d6.setContent(html_5de33ee8f16c47cba4e4591c1b1e48cf);
+        
+
+        marker_2e1bb05243c64250be461ead958945f5.bindPopup(popup_a1a4b3ca2554439ca7738ea975e719d6)
+        ;
+
+        
+    
+    
+            var marker_326b626e91c74bf6b5bada80154c6420 = L.marker(
+                [35.1814338581534, 126.730435932879],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_680a40d80bc249a5b22ae5c3a9b0e612 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c56dac006f8c4f77aae8dd21942db80b = $(`<div id="html_c56dac006f8c4f77aae8dd21942db80b" style="width: 100.0%; height: 100.0%;">광주 광산구 용진로 395</div>`)[0];
+            popup_680a40d80bc249a5b22ae5c3a9b0e612.setContent(html_c56dac006f8c4f77aae8dd21942db80b);
+        
+
+        marker_326b626e91c74bf6b5bada80154c6420.bindPopup(popup_680a40d80bc249a5b22ae5c3a9b0e612)
+        ;
+
+        
+    
+    
+            var marker_7059b4d26f9041eaa9fe9c985d0d52d2 = L.marker(
+                [35.1632605540612, 126.700457996526],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_f2420f0c135f450ba80178ad20b3c67b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e0b18bf7bea49b6bdbf1c0988b03677 = $(`<div id="html_4e0b18bf7bea49b6bdbf1c0988b03677" style="width: 100.0%; height: 100.0%;">광주 광산구 삼도로 341-3</div>`)[0];
+            popup_f2420f0c135f450ba80178ad20b3c67b.setContent(html_4e0b18bf7bea49b6bdbf1c0988b03677);
+        
+
+        marker_7059b4d26f9041eaa9fe9c985d0d52d2.bindPopup(popup_f2420f0c135f450ba80178ad20b3c67b)
+        ;
+
+        
+    
+    
+            var marker_f6b4f609d8e743ba90d8d3e2701c5e43 = L.marker(
+                [35.0973737106255, 126.773913405583],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_b9656c0b238a4623aff59a3df117bf88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28c6f158c9d342abbab3687fbfda0eca = $(`<div id="html_28c6f158c9d342abbab3687fbfda0eca" style="width: 100.0%; height: 100.0%;">광주 광산구 동곡로 155</div>`)[0];
+            popup_b9656c0b238a4623aff59a3df117bf88.setContent(html_28c6f158c9d342abbab3687fbfda0eca);
+        
+
+        marker_f6b4f609d8e743ba90d8d3e2701c5e43.bindPopup(popup_b9656c0b238a4623aff59a3df117bf88)
+        ;
+
+        
+    
+    
+            var marker_4d076c7c11d24324b03009bc69e2139c = L.marker(
+                [35.2198391730306, 126.745189780093],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_c0059da008d743bd82628b67a702ae84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7d31b45b0ae4f54a90457d923d118a1 = $(`<div id="html_a7d31b45b0ae4f54a90457d923d118a1" style="width: 100.0%; height: 100.0%;">광주 광산구 하림길 1</div>`)[0];
+            popup_c0059da008d743bd82628b67a702ae84.setContent(html_a7d31b45b0ae4f54a90457d923d118a1);
+        
+
+        marker_4d076c7c11d24324b03009bc69e2139c.bindPopup(popup_c0059da008d743bd82628b67a702ae84)
+        ;
+
+        
+    
+    
+            var marker_1e43c12f99bc48e39f41100d52030a37 = L.marker(
+                [35.1909302918196, 126.828466684243],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_5234180baf5b45288ea9d50feefdbe4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6def80ec76fa4cafb5987be370222913 = $(`<div id="html_6def80ec76fa4cafb5987be370222913" style="width: 100.0%; height: 100.0%;">광주 광산구 수완로 63</div>`)[0];
+            popup_5234180baf5b45288ea9d50feefdbe4c.setContent(html_6def80ec76fa4cafb5987be370222913);
+        
+
+        marker_1e43c12f99bc48e39f41100d52030a37.bindPopup(popup_5234180baf5b45288ea9d50feefdbe4c)
+        ;
+
+        
+    
+    
+            var marker_61251a5f294c4ac68848c2ad4a1c7c77 = L.marker(
+                [35.154468786341, 126.901156981989],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_439cca549b144c49ba44a7fb7059bec9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b1b200dba224c04a8398a8b5d635551 = $(`<div id="html_0b1b200dba224c04a8398a8b5d635551" style="width: 100.0%; height: 100.0%;">광주 서구 경열로 149</div>`)[0];
+            popup_439cca549b144c49ba44a7fb7059bec9.setContent(html_0b1b200dba224c04a8398a8b5d635551);
+        
+
+        marker_61251a5f294c4ac68848c2ad4a1c7c77.bindPopup(popup_439cca549b144c49ba44a7fb7059bec9)
+        ;
+
+        
+    
+    
+            var marker_7fe11a8e85034634832784365bd3c230 = L.marker(
+                [35.2163109434433, 126.84648213591],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_60c69634b38c4726b25df6c6ed481d79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a82185c31f954b36b1af7cb3c526bbfc = $(`<div id="html_a82185c31f954b36b1af7cb3c526bbfc" style="width: 100.0%; height: 100.0%;">광주 광산구 첨단중앙로106번길 65-15</div>`)[0];
+            popup_60c69634b38c4726b25df6c6ed481d79.setContent(html_a82185c31f954b36b1af7cb3c526bbfc);
+        
+
+        marker_7fe11a8e85034634832784365bd3c230.bindPopup(popup_60c69634b38c4726b25df6c6ed481d79)
+        ;
+
+        
+    
+    
+            var marker_95b606a9948949f98cbde84c72ccb21c = L.marker(
+                [35.1577628673511, 126.850549066782],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_70c8c71e1718435ab9a0766f49e822a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_443fea04768d401faa8cc35240dba90c = $(`<div id="html_443fea04768d401faa8cc35240dba90c" style="width: 100.0%; height: 100.0%;">광주 서구 상무연하로 106</div>`)[0];
+            popup_70c8c71e1718435ab9a0766f49e822a0.setContent(html_443fea04768d401faa8cc35240dba90c);
+        
+
+        marker_95b606a9948949f98cbde84c72ccb21c.bindPopup(popup_70c8c71e1718435ab9a0766f49e822a0)
+        ;
+
+        
+    
+    
+            var marker_37523fb1b4d7468da3795ae6b7e39d9f = L.marker(
+                [35.1782679904015, 126.919835987853],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_94e0d9cda12e41a2904aa4037a47c8aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7faf1a9d6f845c7aa4f46c70b30d3b3 = $(`<div id="html_e7faf1a9d6f845c7aa4f46c70b30d3b3" style="width: 100.0%; height: 100.0%;">광주 북구 중문로 63</div>`)[0];
+            popup_94e0d9cda12e41a2904aa4037a47c8aa.setContent(html_e7faf1a9d6f845c7aa4f46c70b30d3b3);
+        
+
+        marker_37523fb1b4d7468da3795ae6b7e39d9f.bindPopup(popup_94e0d9cda12e41a2904aa4037a47c8aa)
+        ;
+
+        
+    
+    
+            var marker_3170b5e4aee24c5fa886480c2dfc1008 = L.marker(
+                [35.1353284034598, 126.859395978915],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_cd54ad2619c34919ad637009d94d9bf0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_817879b45150457bbdba82dd0e6a4a2e = $(`<div id="html_817879b45150457bbdba82dd0e6a4a2e" style="width: 100.0%; height: 100.0%;">광주 서구 운천로 30 금호지구대</div>`)[0];
+            popup_cd54ad2619c34919ad637009d94d9bf0.setContent(html_817879b45150457bbdba82dd0e6a4a2e);
+        
+
+        marker_3170b5e4aee24c5fa886480c2dfc1008.bindPopup(popup_cd54ad2619c34919ad637009d94d9bf0)
+        ;
+
+        
+    
+    
+            var marker_69093a5fbb834cd88b29cff3cb60a833 = L.marker(
+                [35.143629483813, 126.803135636172],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_dcf8f8c4911f44fa8e2208be2bec1640 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0f01a3b38f24422bc4ff291b1a0613a = $(`<div id="html_c0f01a3b38f24422bc4ff291b1a0613a" style="width: 100.0%; height: 100.0%;">광주 광산구 상무대로 342 송정치안센타</div>`)[0];
+            popup_dcf8f8c4911f44fa8e2208be2bec1640.setContent(html_c0f01a3b38f24422bc4ff291b1a0613a);
+        
+
+        marker_69093a5fbb834cd88b29cff3cb60a833.bindPopup(popup_dcf8f8c4911f44fa8e2208be2bec1640)
+        ;
+
+        
+    
+    
+            var marker_234fa806c2a54eada7614856f5e40d9c = L.marker(
+                [35.2030041739885, 126.898171419251],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_ed845ba3710641d2af11560049285c80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb658f89634f488aa1375bdc21ce573c = $(`<div id="html_eb658f89634f488aa1375bdc21ce573c" style="width: 100.0%; height: 100.0%;">광주 북구 설죽로 489</div>`)[0];
+            popup_ed845ba3710641d2af11560049285c80.setContent(html_eb658f89634f488aa1375bdc21ce573c);
+        
+
+        marker_234fa806c2a54eada7614856f5e40d9c.bindPopup(popup_ed845ba3710641d2af11560049285c80)
+        ;
+
+        
+    
+    
+            var marker_05135eafa8814c5680a83768063d6087 = L.marker(
+                [35.1687861162721, 126.809213519982],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_bec4ab04b977442190a386201157ab5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3340a406f6b545afb2b171e2d9dcc806 = $(`<div id="html_3340a406f6b545afb2b171e2d9dcc806" style="width: 100.0%; height: 100.0%;">광주 광산구 사암로 274</div>`)[0];
+            popup_bec4ab04b977442190a386201157ab5f.setContent(html_3340a406f6b545afb2b171e2d9dcc806);
+        
+
+        marker_05135eafa8814c5680a83768063d6087.bindPopup(popup_bec4ab04b977442190a386201157ab5f)
+        ;
+
+        
+    
+    
+            var marker_35025aad296548e4a3210b9b9659c5e0 = L.marker(
+                [35.1495308606005, 126.919549217824],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_a8a31f6ed0a34cd6ba3e3d417302f4f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4aa76d36c9e944de9755cf86026517d3 = $(`<div id="html_4aa76d36c9e944de9755cf86026517d3" style="width: 100.0%; height: 100.0%;">광주 동구 예술길 31-5 금남지구대</div>`)[0];
+            popup_a8a31f6ed0a34cd6ba3e3d417302f4f3.setContent(html_4aa76d36c9e944de9755cf86026517d3);
+        
+
+        marker_35025aad296548e4a3210b9b9659c5e0.bindPopup(popup_a8a31f6ed0a34cd6ba3e3d417302f4f3)
+        ;
+
+        
+    
+    
+            var marker_66dd73840d224481aff4db4dd0abc807 = L.marker(
+                [35.1532021062634, 126.876943474648],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_6444d7b306d245cd9c15fd8b6212d9ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e038a9b30b2845cebc9c703b44036302 = $(`<div id="html_e038a9b30b2845cebc9c703b44036302" style="width: 100.0%; height: 100.0%;">광주 서구 화운로 160</div>`)[0];
+            popup_6444d7b306d245cd9c15fd8b6212d9ff.setContent(html_e038a9b30b2845cebc9c703b44036302);
+        
+
+        marker_66dd73840d224481aff4db4dd0abc807.bindPopup(popup_6444d7b306d245cd9c15fd8b6212d9ff)
+        ;
+
+        
+    
+    
+            var marker_48c274dbbca5491ea59bd3be681bd966 = L.marker(
+                [35.1538772636913, 126.807595402518],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_0adb2dfc8f0d4d10a5d9cb245e216ace = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5316879e3b5b450fb316ff44dbd6def5 = $(`<div id="html_5316879e3b5b450fb316ff44dbd6def5" style="width: 100.0%; height: 100.0%;">광주 광산구 사암로106번길 3</div>`)[0];
+            popup_0adb2dfc8f0d4d10a5d9cb245e216ace.setContent(html_5316879e3b5b450fb316ff44dbd6def5);
+        
+
+        marker_48c274dbbca5491ea59bd3be681bd966.bindPopup(popup_0adb2dfc8f0d4d10a5d9cb245e216ace)
+        ;
+
+        
+    
+    
+            var marker_ea39e10cbccc4dd797a628421ed68e43 = L.marker(
+                [35.1329708575853, 126.9086178806],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_105794af2f474e02868c9b569e5158a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0bda5b74d0241179a058be1e06d82b6 = $(`<div id="html_d0bda5b74d0241179a058be1e06d82b6" style="width: 100.0%; height: 100.0%;">광주 남구 대남대로149번길 8</div>`)[0];
+            popup_105794af2f474e02868c9b569e5158a4.setContent(html_d0bda5b74d0241179a058be1e06d82b6);
+        
+
+        marker_ea39e10cbccc4dd797a628421ed68e43.bindPopup(popup_105794af2f474e02868c9b569e5158a4)
+        ;
+
+        
+    
+    
+            var marker_0c8bacd601d64093b8d2685ec075093c = L.marker(
+                [35.1834371712194, 126.902498122958],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_5f1c42a5c1344193b54bffc7526e9748 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4aa95c03ff624acd809113f0eee587c2 = $(`<div id="html_4aa95c03ff624acd809113f0eee587c2" style="width: 100.0%; height: 100.0%;">광주 북구 문화소통로 78</div>`)[0];
+            popup_5f1c42a5c1344193b54bffc7526e9748.setContent(html_4aa95c03ff624acd809113f0eee587c2);
+        
+
+        marker_0c8bacd601d64093b8d2685ec075093c.bindPopup(popup_5f1c42a5c1344193b54bffc7526e9748)
+        ;
+
+        
+    
+    
+            var marker_059c8ef6e0114ebcb4802ac02a66c27e = L.marker(
+                [35.1870959974847, 126.921543723599],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_f4f0cf7e7f4641c1819da3f3fa35eab3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_737228a235b140a68dd0a1ea363488ef = $(`<div id="html_737228a235b140a68dd0a1ea363488ef" style="width: 100.0%; height: 100.0%;">광주 북구 대천로 146</div>`)[0];
+            popup_f4f0cf7e7f4641c1819da3f3fa35eab3.setContent(html_737228a235b140a68dd0a1ea363488ef);
+        
+
+        marker_059c8ef6e0114ebcb4802ac02a66c27e.bindPopup(popup_f4f0cf7e7f4641c1819da3f3fa35eab3)
+        ;
+
+        
+    
+    
+            var marker_24d5acc28ccd4f02a61b4ebae8f0210d = L.marker(
+                [35.1625689813577, 126.905036663174],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_2001b69f477a41e498ffc6e693fdf00c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b476a81dd6154b359aaa567d1ffabeb2 = $(`<div id="html_b476a81dd6154b359aaa567d1ffabeb2" style="width: 100.0%; height: 100.0%;">광주 북구 태봉로 57</div>`)[0];
+            popup_2001b69f477a41e498ffc6e693fdf00c.setContent(html_b476a81dd6154b359aaa567d1ffabeb2);
+        
+
+        marker_24d5acc28ccd4f02a61b4ebae8f0210d.bindPopup(popup_2001b69f477a41e498ffc6e693fdf00c)
+        ;
+
+        
+    
+    
+            var marker_c26c4f9b72a047deb52b7c1e5f245f67 = L.marker(
+                [35.1120674113461, 126.899742713115],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_33e91f5e6a2749128ffbb52deec0ae93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb84dcdee6ad49ec9b5117444c2c1a50 = $(`<div id="html_cb84dcdee6ad49ec9b5117444c2c1a50" style="width: 100.0%; height: 100.0%;">광주 남구 화산로 27</div>`)[0];
+            popup_33e91f5e6a2749128ffbb52deec0ae93.setContent(html_cb84dcdee6ad49ec9b5117444c2c1a50);
+        
+
+        marker_c26c4f9b72a047deb52b7c1e5f245f67.bindPopup(popup_33e91f5e6a2749128ffbb52deec0ae93)
+        ;
+
+        
+    
+    
+            var marker_2f5564cabbe34f308e2ed9e5aa9db049 = L.marker(
+                [35.1410702470094, 126.900620352561],
+                {}
+            ).addTo(marker_cluster_9efdac99eb664adc8fb3c36647dc9d55);
+        
+    
+        var popup_6bf90d9e49e84c6d9db4f310d7b1670a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b0dde879e6b4239876b0b6dd49fbc6e = $(`<div id="html_6b0dde879e6b4239876b0b6dd49fbc6e" style="width: 100.0%; height: 100.0%;">광주 남구 월산로 30</div>`)[0];
+            popup_6bf90d9e49e84c6d9db4f310d7b1670a.setContent(html_6b0dde879e6b4239876b0b6dd49fbc6e);
+        
+
+        marker_2f5564cabbe34f308e2ed9e5aa9db049.bindPopup(popup_6bf90d9e49e84c6d9db4f310d7b1670a)
+        ;
+
+        
+    
+</script>
