@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img src="https://www.thescoop.co.kr/news/photo/202006/39756_54987_1115.jpg", alt="backgroud">
+
+    <br>
+    <img src="https://postfiles.pstatic.net/MjAyMDA5MjVfNjIg/MDAxNjAwOTc0MTE3OTc1.Lij87WSLxxgKuvb1orFuhrGZ2cCBoct70axUf2jmw4Ig.gYXiR4O2xMfX6Qp_l6N_n1WaI-dBO7UyN9wso_Zziisg.PNG.simonmatthew/%ED%83%80%EC%9D%B4%ED%8B%80.PNG?type=w773", alt="title">
+
+    <br>
+    <input type="radio" name="chk_info" value="남구">남구
+    <input type="radio" name="chk_info" value="북구">북구
+    <input type="radio" name="chk_info" value="서구">서구
+    <input type="radio" name="chk_info" value="광산구">광산구
+    <input type="radio" name="chk_info" value="동구">동구
+
+
+    <br>
+
+    <form action="{% url 'culture' %}" method="POST"> {% csrf_token %}
+        <button type="submit">
+            문화
+        </button>
+    </form>
+
+    <form action="{% url 'protect' %}" method="POST"> {% csrf_token %}
+        <button type="submit">
+            치안
+        </button>
+    </form>
+
+    <form action="{% url 'study' %}" method="POST"> {% csrf_token %}
+        <button type="submit">
+            공부
+        </button>
+    </form>
+
+
+
+
+</body>
+</html>

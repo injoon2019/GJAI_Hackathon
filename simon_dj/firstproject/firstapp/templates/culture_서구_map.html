@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6ecc1917de084bb188df026b0b597baf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6ecc1917de084bb188df026b0b597baf" ></div>
+        
+</body>
+<script>    
+    
+            var map_6ecc1917de084bb188df026b0b597baf = L.map(
+                "map_6ecc1917de084bb188df026b0b597baf",
+                {
+                    center: [35.139737, 126.913963],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b047261f56fd4706b59c23681276ddac = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+            var circle_marker_193f0e9dd6cc4275834a53e986c439a3 = L.circleMarker(
+                [35.09398740340531, 126.81324660827154],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_001ad906d1a54c5a9611f1f950218126 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_222fb449f27b4377a77eebd3d8eefe34 = $(`<div id="html_222fb449f27b4377a77eebd3d8eefe34" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_001ad906d1a54c5a9611f1f950218126.setContent(html_222fb449f27b4377a77eebd3d8eefe34);
+        
+
+        circle_marker_193f0e9dd6cc4275834a53e986c439a3.bindPopup(popup_001ad906d1a54c5a9611f1f950218126)
+        ;
+
+        
+    
+    
+            var circle_marker_bc51fa0d03b746d5bd806cd19504de73 = L.circleMarker(
+                [35.09981133624267, 126.81324660827154],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_91741a7f99ca47719ef1f057da119372 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ed38b70384f48ff86a75cd0c44744e7 = $(`<div id="html_1ed38b70384f48ff86a75cd0c44744e7" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_91741a7f99ca47719ef1f057da119372.setContent(html_1ed38b70384f48ff86a75cd0c44744e7);
+        
+
+        circle_marker_bc51fa0d03b746d5bd806cd19504de73.bindPopup(popup_91741a7f99ca47719ef1f057da119372)
+        ;
+
+        
+    
+    
+            var circle_marker_20cae1ca26164e4dbfee9ca36ba5d5dc = L.circleMarker(
+                [35.10563526908002, 126.81324660827154],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_46fe0bb6ca6148fdb51116e1a426e979 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_830f5408c1004b9f96840ad6564d03ab = $(`<div id="html_830f5408c1004b9f96840ad6564d03ab" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_46fe0bb6ca6148fdb51116e1a426e979.setContent(html_830f5408c1004b9f96840ad6564d03ab);
+        
+
+        circle_marker_20cae1ca26164e4dbfee9ca36ba5d5dc.bindPopup(popup_46fe0bb6ca6148fdb51116e1a426e979)
+        ;
+
+        
+    
+    
+            var circle_marker_685eb332c4a54ed883d684a303adc57f = L.circleMarker(
+                [35.09398740340531, 126.8203944697718],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_b2bb67e04b59440281a16a296dd6726b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e435473991b44375890e5491b87bd73c = $(`<div id="html_e435473991b44375890e5491b87bd73c" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_b2bb67e04b59440281a16a296dd6726b.setContent(html_e435473991b44375890e5491b87bd73c);
+        
+
+        circle_marker_685eb332c4a54ed883d684a303adc57f.bindPopup(popup_b2bb67e04b59440281a16a296dd6726b)
+        ;
+
+        
+    
+    
+            var circle_marker_cf56807616254af583396d7ad05eb54c = L.circleMarker(
+                [35.09981133624267, 126.8203944697718],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_0b8306dd76e941a499e325bff19eccc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d6a8bba771c42a5aeda12aac692c2c5 = $(`<div id="html_1d6a8bba771c42a5aeda12aac692c2c5" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_0b8306dd76e941a499e325bff19eccc3.setContent(html_1d6a8bba771c42a5aeda12aac692c2c5);
+        
+
+        circle_marker_cf56807616254af583396d7ad05eb54c.bindPopup(popup_0b8306dd76e941a499e325bff19eccc3)
+        ;
+
+        
+    
+    
+            var circle_marker_47c15228de5e45a4909a86092a7821f7 = L.circleMarker(
+                [35.10563526908002, 126.8203944697718],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_0c951f070f50403bb8dbed61375c0f7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c0b015c1b6546e7a57e9f7d5021b223 = $(`<div id="html_3c0b015c1b6546e7a57e9f7d5021b223" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_0c951f070f50403bb8dbed61375c0f7b.setContent(html_3c0b015c1b6546e7a57e9f7d5021b223);
+        
+
+        circle_marker_47c15228de5e45a4909a86092a7821f7.bindPopup(popup_0c951f070f50403bb8dbed61375c0f7b)
+        ;
+
+        
+    
+    
+            var circle_marker_7121c92ed12a4e839f8cbdeaac10d3d4 = L.circleMarker(
+                [35.09981133624267, 126.82754233127204],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_0bb6fb34bce449dfabf6f0b1d6ec7b30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b679326aa2d455a914a3de621599399 = $(`<div id="html_5b679326aa2d455a914a3de621599399" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_0bb6fb34bce449dfabf6f0b1d6ec7b30.setContent(html_5b679326aa2d455a914a3de621599399);
+        
+
+        circle_marker_7121c92ed12a4e839f8cbdeaac10d3d4.bindPopup(popup_0bb6fb34bce449dfabf6f0b1d6ec7b30)
+        ;
+
+        
+    
+    
+            var circle_marker_3626b8d6269042e788270d2abd4930f0 = L.circleMarker(
+                [35.10563526908002, 126.82754233127204],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_d42f63b92de14fb387582f9cbe3e9296 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7bd564fbcf341c0ab3deca9ca70e9d4 = $(`<div id="html_f7bd564fbcf341c0ab3deca9ca70e9d4" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_d42f63b92de14fb387582f9cbe3e9296.setContent(html_f7bd564fbcf341c0ab3deca9ca70e9d4);
+        
+
+        circle_marker_3626b8d6269042e788270d2abd4930f0.bindPopup(popup_d42f63b92de14fb387582f9cbe3e9296)
+        ;
+
+        
+    
+    
+            var circle_marker_48bbe3cb43ed4408bc410e952f9e4a1a = L.circleMarker(
+                [35.11145920191738, 126.82754233127204],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_8659cf23d710488e838fe022ef55878c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de5c144f434146a4b6e1f1209be46c61 = $(`<div id="html_de5c144f434146a4b6e1f1209be46c61" style="width: 100.0%; height: 100.0%;">점수는 : 5 입니다. {'독서실': '900미터 안에 없음', '도서관': '600미터 안에 1개 존재', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_8659cf23d710488e838fe022ef55878c.setContent(html_de5c144f434146a4b6e1f1209be46c61);
+        
+
+        circle_marker_48bbe3cb43ed4408bc410e952f9e4a1a.bindPopup(popup_8659cf23d710488e838fe022ef55878c)
+        ;
+
+        
+    
+    
+            var circle_marker_a1445c865532489a904ab25731862f67 = L.circleMarker(
+                [35.11728313475473, 126.82754233127204],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_d641a5e0e6934f7b9643edde7e886099 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_905415a8f496421286c3e4f05c5b844d = $(`<div id="html_905415a8f496421286c3e4f05c5b844d" style="width: 100.0%; height: 100.0%;">점수는 : 5 입니다. {'독서실': '900미터 안에 없음', '도서관': '600미터 안에 1개 존재', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_d641a5e0e6934f7b9643edde7e886099.setContent(html_905415a8f496421286c3e4f05c5b844d);
+        
+
+        circle_marker_a1445c865532489a904ab25731862f67.bindPopup(popup_d641a5e0e6934f7b9643edde7e886099)
+        ;
+
+        
+    
+    
+            var circle_marker_7fd328d404e143919f0a798baf7ff555 = L.circleMarker(
+                [35.12310706759209, 126.82754233127204],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_4a3ca05894b64d41a0fa00387ebedcda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fde72633be3647a8bbfd83ddbc881111 = $(`<div id="html_fde72633be3647a8bbfd83ddbc881111" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_4a3ca05894b64d41a0fa00387ebedcda.setContent(html_fde72633be3647a8bbfd83ddbc881111);
+        
+
+        circle_marker_7fd328d404e143919f0a798baf7ff555.bindPopup(popup_4a3ca05894b64d41a0fa00387ebedcda)
+        ;
+
+        
+    
+    
+            var circle_marker_5aa9de487b5d4e7b83efd77d318b6e5c = L.circleMarker(
+                [35.09398740340531, 126.83469019277229],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_c4af0bf8110f4d15aa8ec80641e57631 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67442182380f452fa655be60a4cfaa6e = $(`<div id="html_67442182380f452fa655be60a4cfaa6e" style="width: 100.0%; height: 100.0%;">점수는 : 5 입니다. {'독서실': '900미터 안에 없음', '도서관': '600미터 안에 1개 존재', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_c4af0bf8110f4d15aa8ec80641e57631.setContent(html_67442182380f452fa655be60a4cfaa6e);
+        
+
+        circle_marker_5aa9de487b5d4e7b83efd77d318b6e5c.bindPopup(popup_c4af0bf8110f4d15aa8ec80641e57631)
+        ;
+
+        
+    
+    
+            var circle_marker_074bb52630c74aafaf34f59751226c9a = L.circleMarker(
+                [35.09981133624267, 126.83469019277229],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_8fdddf08ea2e4f028e39548671552e68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e26cc4f92f3a424abffd5e24af7cf0e5 = $(`<div id="html_e26cc4f92f3a424abffd5e24af7cf0e5" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_8fdddf08ea2e4f028e39548671552e68.setContent(html_e26cc4f92f3a424abffd5e24af7cf0e5);
+        
+
+        circle_marker_074bb52630c74aafaf34f59751226c9a.bindPopup(popup_8fdddf08ea2e4f028e39548671552e68)
+        ;
+
+        
+    
+    
+            var circle_marker_af373658407d434cacfea7c0c09ce35a = L.circleMarker(
+                [35.10563526908002, 126.83469019277229],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_5af7874a6ba54584be62a44234843b10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88e213cb55fd4542877fce99341615ce = $(`<div id="html_88e213cb55fd4542877fce99341615ce" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_5af7874a6ba54584be62a44234843b10.setContent(html_88e213cb55fd4542877fce99341615ce);
+        
+
+        circle_marker_af373658407d434cacfea7c0c09ce35a.bindPopup(popup_5af7874a6ba54584be62a44234843b10)
+        ;
+
+        
+    
+    
+            var circle_marker_f3d48c8acbed4377b85aef262eb0cf78 = L.circleMarker(
+                [35.11145920191738, 126.83469019277229],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_a1334818f84245d49a8af098c72b7d1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0432b31e7d8b486fbd62d9c226dec1a6 = $(`<div id="html_0432b31e7d8b486fbd62d9c226dec1a6" style="width: 100.0%; height: 100.0%;">점수는 : 5 입니다. {'독서실': '900미터 안에 없음', '도서관': '600미터 안에 1개 존재', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_a1334818f84245d49a8af098c72b7d1f.setContent(html_0432b31e7d8b486fbd62d9c226dec1a6);
+        
+
+        circle_marker_f3d48c8acbed4377b85aef262eb0cf78.bindPopup(popup_a1334818f84245d49a8af098c72b7d1f)
+        ;
+
+        
+    
+    
+            var circle_marker_f85df506d1c145da98a00cfe7ebcd726 = L.circleMarker(
+                [35.11728313475473, 126.83469019277229],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_7cd9075e25d246bf94482367e0d3573f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50ba603b035e45b795ff2dbe484c4059 = $(`<div id="html_50ba603b035e45b795ff2dbe484c4059" style="width: 100.0%; height: 100.0%;">점수는 : 5 입니다. {'독서실': '900미터 안에 없음', '도서관': '600미터 안에 1개 존재', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_7cd9075e25d246bf94482367e0d3573f.setContent(html_50ba603b035e45b795ff2dbe484c4059);
+        
+
+        circle_marker_f85df506d1c145da98a00cfe7ebcd726.bindPopup(popup_7cd9075e25d246bf94482367e0d3573f)
+        ;
+
+        
+    
+    
+            var circle_marker_933c3036a8434e9da94fb2bbb76c5140 = L.circleMarker(
+                [35.12310706759209, 126.83469019277229],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_b413b7b7f24a484294af2e725e0d1890 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_519848f598d64774b5403975814110d7 = $(`<div id="html_519848f598d64774b5403975814110d7" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_b413b7b7f24a484294af2e725e0d1890.setContent(html_519848f598d64774b5403975814110d7);
+        
+
+        circle_marker_933c3036a8434e9da94fb2bbb76c5140.bindPopup(popup_b413b7b7f24a484294af2e725e0d1890)
+        ;
+
+        
+    
+    
+            var circle_marker_aee537b7a09540199d9e19706f8e8bb5 = L.circleMarker(
+                [35.09981133624267, 126.84183805427253],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_a653707212f743bd9501050582f1ac41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6272a43c7f8144078f175f24faca6558 = $(`<div id="html_6272a43c7f8144078f175f24faca6558" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_a653707212f743bd9501050582f1ac41.setContent(html_6272a43c7f8144078f175f24faca6558);
+        
+
+        circle_marker_aee537b7a09540199d9e19706f8e8bb5.bindPopup(popup_a653707212f743bd9501050582f1ac41)
+        ;
+
+        
+    
+    
+            var circle_marker_c10f4f9fc7b94df9beab4e628815da50 = L.circleMarker(
+                [35.10563526908002, 126.84183805427253],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_6d86f77d2f8b43c980b105bc284f8369 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d63810954c54f5193fd6c3de2a3d9c9 = $(`<div id="html_7d63810954c54f5193fd6c3de2a3d9c9" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_6d86f77d2f8b43c980b105bc284f8369.setContent(html_7d63810954c54f5193fd6c3de2a3d9c9);
+        
+
+        circle_marker_c10f4f9fc7b94df9beab4e628815da50.bindPopup(popup_6d86f77d2f8b43c980b105bc284f8369)
+        ;
+
+        
+    
+    
+            var circle_marker_bc99bac487454c0a8d9e2abaaa7a3568 = L.circleMarker(
+                [35.11145920191738, 126.84183805427253],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_8a04785d2c9f4372b223476d143ef6c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a398f83b4c447f886fdcc24ed9865e6 = $(`<div id="html_7a398f83b4c447f886fdcc24ed9865e6" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_8a04785d2c9f4372b223476d143ef6c4.setContent(html_7a398f83b4c447f886fdcc24ed9865e6);
+        
+
+        circle_marker_bc99bac487454c0a8d9e2abaaa7a3568.bindPopup(popup_8a04785d2c9f4372b223476d143ef6c4)
+        ;
+
+        
+    
+    
+            var circle_marker_06136693c7fd4d7fb1632534d0e5dd4a = L.circleMarker(
+                [35.11728313475473, 126.84183805427253],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_cfd0203ba02e4aea910de6b21feb8b88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc54e8ccc73e49a2a04161d3497aa2d9 = $(`<div id="html_bc54e8ccc73e49a2a04161d3497aa2d9" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_cfd0203ba02e4aea910de6b21feb8b88.setContent(html_bc54e8ccc73e49a2a04161d3497aa2d9);
+        
+
+        circle_marker_06136693c7fd4d7fb1632534d0e5dd4a.bindPopup(popup_cfd0203ba02e4aea910de6b21feb8b88)
+        ;
+
+        
+    
+    
+            var circle_marker_fbae983479154e428832470ff0070ca2 = L.circleMarker(
+                [35.12310706759209, 126.84183805427253],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_006043b6c47d44eb9099c956eb34d11a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fbf7f9bbb2d4af391c7736c111e2ada = $(`<div id="html_0fbf7f9bbb2d4af391c7736c111e2ada" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_006043b6c47d44eb9099c956eb34d11a.setContent(html_0fbf7f9bbb2d4af391c7736c111e2ada);
+        
+
+        circle_marker_fbae983479154e428832470ff0070ca2.bindPopup(popup_006043b6c47d44eb9099c956eb34d11a)
+        ;
+
+        
+    
+    
+            var circle_marker_8551a93fdfb04729a64502fcd59705e6 = L.circleMarker(
+                [35.10563526908002, 126.84898591577279],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_655d34fed0d848dfb8e6edf24e6da4cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_256a755e2fb848b99ccf017a917e2fb8 = $(`<div id="html_256a755e2fb848b99ccf017a917e2fb8" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_655d34fed0d848dfb8e6edf24e6da4cd.setContent(html_256a755e2fb848b99ccf017a917e2fb8);
+        
+
+        circle_marker_8551a93fdfb04729a64502fcd59705e6.bindPopup(popup_655d34fed0d848dfb8e6edf24e6da4cd)
+        ;
+
+        
+    
+    
+            var circle_marker_137c1f2286f84e1a86edb55ac3facca6 = L.circleMarker(
+                [35.11145920191738, 126.84898591577279],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_58c0834b87a64e319a8eeb4b5c4d3286 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af7beae9fc854bde8686a614c208393b = $(`<div id="html_af7beae9fc854bde8686a614c208393b" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_58c0834b87a64e319a8eeb4b5c4d3286.setContent(html_af7beae9fc854bde8686a614c208393b);
+        
+
+        circle_marker_137c1f2286f84e1a86edb55ac3facca6.bindPopup(popup_58c0834b87a64e319a8eeb4b5c4d3286)
+        ;
+
+        
+    
+    
+            var circle_marker_d14e8b26b81042f3a5968a2eb568bb53 = L.circleMarker(
+                [35.11728313475473, 126.84898591577279],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_8a75ebb66c124110add2972b858c2953 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2eb6d6a7ca64a19b30cd62cb7bc8245 = $(`<div id="html_c2eb6d6a7ca64a19b30cd62cb7bc8245" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_8a75ebb66c124110add2972b858c2953.setContent(html_c2eb6d6a7ca64a19b30cd62cb7bc8245);
+        
+
+        circle_marker_d14e8b26b81042f3a5968a2eb568bb53.bindPopup(popup_8a75ebb66c124110add2972b858c2953)
+        ;
+
+        
+    
+    
+            var circle_marker_c433271db5ca4a8ba2c8ed25b8f276c7 = L.circleMarker(
+                [35.12310706759209, 126.84898591577279],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_5a2a30926026494ab70cb6a5b1ff2984 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c79f230e44348a192ba8b9854a85842 = $(`<div id="html_2c79f230e44348a192ba8b9854a85842" style="width: 100.0%; height: 100.0%;">점수는 : 11 입니다. {'독서실': '900미터 안에 2개 존재', '도서관': '900미터 안에 2개 존재', '학원': '600미터 안에 2개 존재'}</div>`)[0];
+            popup_5a2a30926026494ab70cb6a5b1ff2984.setContent(html_2c79f230e44348a192ba8b9854a85842);
+        
+
+        circle_marker_c433271db5ca4a8ba2c8ed25b8f276c7.bindPopup(popup_5a2a30926026494ab70cb6a5b1ff2984)
+        ;
+
+        
+    
+    
+            var circle_marker_4abd02d43aee4a3aab9fbe0a9854f183 = L.circleMarker(
+                [35.128931000429446, 126.84898591577279],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_7414316dedac4198b807e9eaf2ff2b06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f5864f413b64297a6617c403c2196de = $(`<div id="html_1f5864f413b64297a6617c403c2196de" style="width: 100.0%; height: 100.0%;">점수는 : 16 입니다. {'독서실': '300미터 안에 1개 존재', '도서관': '600미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_7414316dedac4198b807e9eaf2ff2b06.setContent(html_1f5864f413b64297a6617c403c2196de);
+        
+
+        circle_marker_4abd02d43aee4a3aab9fbe0a9854f183.bindPopup(popup_7414316dedac4198b807e9eaf2ff2b06)
+        ;
+
+        
+    
+    
+            var circle_marker_52087a0d97834043bef8e70070e024de = L.circleMarker(
+                [35.10563526908002, 126.85613377727303],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_4a1ec30356dd4acba76f08188fa52f61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1483ae45947f4d73a48e616bdc606a4b = $(`<div id="html_1483ae45947f4d73a48e616bdc606a4b" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_4a1ec30356dd4acba76f08188fa52f61.setContent(html_1483ae45947f4d73a48e616bdc606a4b);
+        
+
+        circle_marker_52087a0d97834043bef8e70070e024de.bindPopup(popup_4a1ec30356dd4acba76f08188fa52f61)
+        ;
+
+        
+    
+    
+            var circle_marker_d98505ff585240ec982e98e221af72e8 = L.circleMarker(
+                [35.11145920191738, 126.85613377727303],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_8d84b1125a7e47dc8fb0582b8cba1cba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa0989ec04b64911bb3d014f399f7786 = $(`<div id="html_fa0989ec04b64911bb3d014f399f7786" style="width: 100.0%; height: 100.0%;">점수는 : 0 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 없음', '학원': '900미터 안에 없음'}</div>`)[0];
+            popup_8d84b1125a7e47dc8fb0582b8cba1cba.setContent(html_fa0989ec04b64911bb3d014f399f7786);
+        
+
+        circle_marker_d98505ff585240ec982e98e221af72e8.bindPopup(popup_8d84b1125a7e47dc8fb0582b8cba1cba)
+        ;
+
+        
+    
+    
+            var circle_marker_852840b9cc874c75a2ddc5a3d81d6918 = L.circleMarker(
+                [35.11728313475473, 126.85613377727303],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_b77665f5ea20420ba7afc7a6d4294bb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_251af50c2c32405e8162748075310733 = $(`<div id="html_251af50c2c32405e8162748075310733" style="width: 100.0%; height: 100.0%;">점수는 : 6 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 1개 존재', '학원': '900미터 안에 2개 존재'}</div>`)[0];
+            popup_b77665f5ea20420ba7afc7a6d4294bb2.setContent(html_251af50c2c32405e8162748075310733);
+        
+
+        circle_marker_852840b9cc874c75a2ddc5a3d81d6918.bindPopup(popup_b77665f5ea20420ba7afc7a6d4294bb2)
+        ;
+
+        
+    
+    
+            var circle_marker_10f4583bda534fa799c52c5fbe0c80b4 = L.circleMarker(
+                [35.12310706759209, 126.85613377727303],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_10cc6e3438054f5e9bbd580af5f580a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20971cff17d04f1bb0f04653ad48f6d2 = $(`<div id="html_20971cff17d04f1bb0f04653ad48f6d2" style="width: 100.0%; height: 100.0%;">점수는 : 15 입니다. {'독서실': '900미터 안에 2개 존재', '도서관': '600미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_10cc6e3438054f5e9bbd580af5f580a5.setContent(html_20971cff17d04f1bb0f04653ad48f6d2);
+        
+
+        circle_marker_10f4583bda534fa799c52c5fbe0c80b4.bindPopup(popup_10cc6e3438054f5e9bbd580af5f580a5)
+        ;
+
+        
+    
+    
+            var circle_marker_7f46249d3aae44f6bf4740bd52c58af0 = L.circleMarker(
+                [35.128931000429446, 126.85613377727303],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_76616ed766884df0a190f3f2f4f1197c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ff02b0af02b41bda037758c3b9b1bb0 = $(`<div id="html_6ff02b0af02b41bda037758c3b9b1bb0" style="width: 100.0%; height: 100.0%;">점수는 : 21 입니다. {'독서실': '300미터 안에 2개 존재', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_76616ed766884df0a190f3f2f4f1197c.setContent(html_6ff02b0af02b41bda037758c3b9b1bb0);
+        
+
+        circle_marker_7f46249d3aae44f6bf4740bd52c58af0.bindPopup(popup_76616ed766884df0a190f3f2f4f1197c)
+        ;
+
+        
+    
+    
+            var circle_marker_8c9619b443144712b294cfdce53ecf66 = L.circleMarker(
+                [35.1347549332668, 126.85613377727303],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_7c5b0b493cdb45e0846b0e9efb373f6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27647f06c47c455ab360e4ac3b6cd2f7 = $(`<div id="html_27647f06c47c455ab360e4ac3b6cd2f7" style="width: 100.0%; height: 100.0%;">점수는 : 18 입니다. {'독서실': '300미터 안에 1개 존재', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_7c5b0b493cdb45e0846b0e9efb373f6b.setContent(html_27647f06c47c455ab360e4ac3b6cd2f7);
+        
+
+        circle_marker_8c9619b443144712b294cfdce53ecf66.bindPopup(popup_7c5b0b493cdb45e0846b0e9efb373f6b)
+        ;
+
+        
+    
+    
+            var circle_marker_c88b1299533e41d3909d9e38de225032 = L.circleMarker(
+                [35.11145920191738, 126.86328163877327],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_38765a927b964e0fa0a10e22574e148f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4665bac1a85f477ca2be4e3a88dc7bb0 = $(`<div id="html_4665bac1a85f477ca2be4e3a88dc7bb0" style="width: 100.0%; height: 100.0%;">점수는 : 6 입니다. {'독서실': '900미터 안에 없음', '도서관': '900미터 안에 1개 존재', '학원': '900미터 안에 2개 존재'}</div>`)[0];
+            popup_38765a927b964e0fa0a10e22574e148f.setContent(html_4665bac1a85f477ca2be4e3a88dc7bb0);
+        
+
+        circle_marker_c88b1299533e41d3909d9e38de225032.bindPopup(popup_38765a927b964e0fa0a10e22574e148f)
+        ;
+
+        
+    
+    
+            var circle_marker_ceaca667d2634ababf7965f9ffa1cd38 = L.circleMarker(
+                [35.11728313475473, 126.86328163877327],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_17b392d7c5594239bed40b47dadfbbc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4c319e845d7496485f2a0e9608dc25d = $(`<div id="html_f4c319e845d7496485f2a0e9608dc25d" style="width: 100.0%; height: 100.0%;">점수는 : 14 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '300미터 안에 1개 존재', '학원': '600미터 안에 2개 존재'}</div>`)[0];
+            popup_17b392d7c5594239bed40b47dadfbbc8.setContent(html_f4c319e845d7496485f2a0e9608dc25d);
+        
+
+        circle_marker_ceaca667d2634ababf7965f9ffa1cd38.bindPopup(popup_17b392d7c5594239bed40b47dadfbbc8)
+        ;
+
+        
+    
+    
+            var circle_marker_1564b862428d4cf988425bd27c0124c3 = L.circleMarker(
+                [35.12310706759209, 126.86328163877327],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_25280dcb2ac1488db7336521fcbcc31e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_993045729d5744bd941415b0839d0837 = $(`<div id="html_993045729d5744bd941415b0839d0837" style="width: 100.0%; height: 100.0%;">점수는 : 16 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_25280dcb2ac1488db7336521fcbcc31e.setContent(html_993045729d5744bd941415b0839d0837);
+        
+
+        circle_marker_1564b862428d4cf988425bd27c0124c3.bindPopup(popup_25280dcb2ac1488db7336521fcbcc31e)
+        ;
+
+        
+    
+    
+            var circle_marker_3a094d9349ec4b679bf45a5e614e3005 = L.circleMarker(
+                [35.128931000429446, 126.86328163877327],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_c06be74a386f4877bf15181c9cfa967f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c77f43600fe41d59f75ae9e92f59864 = $(`<div id="html_3c77f43600fe41d59f75ae9e92f59864" style="width: 100.0%; height: 100.0%;">점수는 : 16 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_c06be74a386f4877bf15181c9cfa967f.setContent(html_3c77f43600fe41d59f75ae9e92f59864);
+        
+
+        circle_marker_3a094d9349ec4b679bf45a5e614e3005.bindPopup(popup_c06be74a386f4877bf15181c9cfa967f)
+        ;
+
+        
+    
+    
+            var circle_marker_20a550044848414c8c55e8171f28906b = L.circleMarker(
+                [35.1347549332668, 126.86328163877327],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_514181a6813e4c08b0c57dcd62f6ba57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55cad86f10134d67be7d5255adb03748 = $(`<div id="html_55cad86f10134d67be7d5255adb03748" style="width: 100.0%; height: 100.0%;">점수는 : 19 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_514181a6813e4c08b0c57dcd62f6ba57.setContent(html_55cad86f10134d67be7d5255adb03748);
+        
+
+        circle_marker_20a550044848414c8c55e8171f28906b.bindPopup(popup_514181a6813e4c08b0c57dcd62f6ba57)
+        ;
+
+        
+    
+    
+            var circle_marker_72ea92ecfd4b49dd895feabc9a18e634 = L.circleMarker(
+                [35.11728313475473, 126.87042950027352],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_9e343c522afa4947a1c8d9ab18136006 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be7afd83b8f346f6942b66b4b602bdc1 = $(`<div id="html_be7afd83b8f346f6942b66b4b602bdc1" style="width: 100.0%; height: 100.0%;">점수는 : 16 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_9e343c522afa4947a1c8d9ab18136006.setContent(html_be7afd83b8f346f6942b66b4b602bdc1);
+        
+
+        circle_marker_72ea92ecfd4b49dd895feabc9a18e634.bindPopup(popup_9e343c522afa4947a1c8d9ab18136006)
+        ;
+
+        
+    
+    
+            var circle_marker_b63096a4165440a0ab5526b16ac29ab1 = L.circleMarker(
+                [35.12310706759209, 126.87042950027352],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_9b59af39528d4b15b7e39895e0f1e21c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4734f6dd32904e0bb65475f7e65cd8e5 = $(`<div id="html_4734f6dd32904e0bb65475f7e65cd8e5" style="width: 100.0%; height: 100.0%;">점수는 : 15 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '600미터 안에 2개 존재', '학원': '600미터 안에 2개 존재'}</div>`)[0];
+            popup_9b59af39528d4b15b7e39895e0f1e21c.setContent(html_4734f6dd32904e0bb65475f7e65cd8e5);
+        
+
+        circle_marker_b63096a4165440a0ab5526b16ac29ab1.bindPopup(popup_9b59af39528d4b15b7e39895e0f1e21c)
+        ;
+
+        
+    
+    
+            var circle_marker_e3b6238eb914492299badee0a2bcd30d = L.circleMarker(
+                [35.128931000429446, 126.87042950027352],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_09dcdf9898c54a209760cc3557ab3ccc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d8f8535ef3a4951b0a404365024564a = $(`<div id="html_1d8f8535ef3a4951b0a404365024564a" style="width: 100.0%; height: 100.0%;">점수는 : 12 입니다. {'독서실': '900미터 안에 2개 존재', '도서관': '300미터 안에 1개 존재', '학원': '600미터 안에 2개 존재'}</div>`)[0];
+            popup_09dcdf9898c54a209760cc3557ab3ccc.setContent(html_1d8f8535ef3a4951b0a404365024564a);
+        
+
+        circle_marker_e3b6238eb914492299badee0a2bcd30d.bindPopup(popup_09dcdf9898c54a209760cc3557ab3ccc)
+        ;
+
+        
+    
+    
+            var circle_marker_549b872d0d83488a8c0a930260c02641 = L.circleMarker(
+                [35.1347549332668, 126.87042950027352],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_37e19e0582bd49bf84b3e16fac00c160 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9052381741794b71b91b2916d6fd7887 = $(`<div id="html_9052381741794b71b91b2916d6fd7887" style="width: 100.0%; height: 100.0%;">점수는 : 14 입니다. {'독서실': '600미터 안에 1개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_37e19e0582bd49bf84b3e16fac00c160.setContent(html_9052381741794b71b91b2916d6fd7887);
+        
+
+        circle_marker_549b872d0d83488a8c0a930260c02641.bindPopup(popup_37e19e0582bd49bf84b3e16fac00c160)
+        ;
+
+        
+    
+    
+            var circle_marker_2d2d23de198e48749c86eb91abb6a25f = L.circleMarker(
+                [35.14057886610416, 126.87042950027352],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_8e7938b156364824b3a33ce367c7ee6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c54a7b9bef44142ad56caa75a51a7a0 = $(`<div id="html_6c54a7b9bef44142ad56caa75a51a7a0" style="width: 100.0%; height: 100.0%;">점수는 : 15 입니다. {'독서실': '300미터 안에 1개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_8e7938b156364824b3a33ce367c7ee6e.setContent(html_6c54a7b9bef44142ad56caa75a51a7a0);
+        
+
+        circle_marker_2d2d23de198e48749c86eb91abb6a25f.bindPopup(popup_8e7938b156364824b3a33ce367c7ee6e)
+        ;
+
+        
+    
+    
+            var circle_marker_48d8b00ef0124552912999a2fbe020a9 = L.circleMarker(
+                [35.11728313475473, 126.87757736177377],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_5d9971d547cd4145911d55713769ad23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd7d905b13e849659871155b71a732ba = $(`<div id="html_cd7d905b13e849659871155b71a732ba" style="width: 100.0%; height: 100.0%;">점수는 : 11 입니다. {'독서실': '900미터 안에 2개 존재', '도서관': '900미터 안에 2개 존재', '학원': '600미터 안에 2개 존재'}</div>`)[0];
+            popup_5d9971d547cd4145911d55713769ad23.setContent(html_cd7d905b13e849659871155b71a732ba);
+        
+
+        circle_marker_48d8b00ef0124552912999a2fbe020a9.bindPopup(popup_5d9971d547cd4145911d55713769ad23)
+        ;
+
+        
+    
+    
+            var circle_marker_d0bfa7613e8143b7818eacce169f0ab7 = L.circleMarker(
+                [35.12310706759209, 126.87757736177377],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_93243b3f2dc4411dae237f75daec0386 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcbc59959f294ed6866edb83f95ab47c = $(`<div id="html_bcbc59959f294ed6866edb83f95ab47c" style="width: 100.0%; height: 100.0%;">점수는 : 19 입니다. {'독서실': '300미터 안에 2개 존재', '도서관': '600미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_93243b3f2dc4411dae237f75daec0386.setContent(html_bcbc59959f294ed6866edb83f95ab47c);
+        
+
+        circle_marker_d0bfa7613e8143b7818eacce169f0ab7.bindPopup(popup_93243b3f2dc4411dae237f75daec0386)
+        ;
+
+        
+    
+    
+            var circle_marker_dfe39c0650c349d8af162263b6d45c4e = L.circleMarker(
+                [35.128931000429446, 126.87757736177377],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_a9f756a1841c49d289c511fbc94f074a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c40dc152760e4068badee3da45f15b65 = $(`<div id="html_c40dc152760e4068badee3da45f15b65" style="width: 100.0%; height: 100.0%;">점수는 : 15 입니다. {'독서실': '300미터 안에 1개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_a9f756a1841c49d289c511fbc94f074a.setContent(html_c40dc152760e4068badee3da45f15b65);
+        
+
+        circle_marker_dfe39c0650c349d8af162263b6d45c4e.bindPopup(popup_a9f756a1841c49d289c511fbc94f074a)
+        ;
+
+        
+    
+    
+            var circle_marker_0847fb1720c74bda83b01525a4c89c37 = L.circleMarker(
+                [35.1347549332668, 126.87757736177377],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_f1db194b9bbe42d5806805172ada9917 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e019e4a4a08490fa8e48c83efe8d88c = $(`<div id="html_5e019e4a4a08490fa8e48c83efe8d88c" style="width: 100.0%; height: 100.0%;">점수는 : 12 입니다. {'독서실': '900미터 안에 2개 존재', '도서관': '300미터 안에 1개 존재', '학원': '600미터 안에 2개 존재'}</div>`)[0];
+            popup_f1db194b9bbe42d5806805172ada9917.setContent(html_5e019e4a4a08490fa8e48c83efe8d88c);
+        
+
+        circle_marker_0847fb1720c74bda83b01525a4c89c37.bindPopup(popup_f1db194b9bbe42d5806805172ada9917)
+        ;
+
+        
+    
+    
+            var circle_marker_b1bbd110353046c6bb0bea1b4495bc9f = L.circleMarker(
+                [35.14057886610416, 126.87757736177377],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_533e146d314d49d9b4b8e5497aca2c31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b5032d8a75243c3927c9bc8c80da759 = $(`<div id="html_7b5032d8a75243c3927c9bc8c80da759" style="width: 100.0%; height: 100.0%;">점수는 : 18 입니다. {'독서실': '300미터 안에 1개 존재', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_533e146d314d49d9b4b8e5497aca2c31.setContent(html_7b5032d8a75243c3927c9bc8c80da759);
+        
+
+        circle_marker_b1bbd110353046c6bb0bea1b4495bc9f.bindPopup(popup_533e146d314d49d9b4b8e5497aca2c31)
+        ;
+
+        
+    
+    
+            var circle_marker_550659ddc19d466685c2690fcfd9ad41 = L.circleMarker(
+                [35.14640279894151, 126.87757736177377],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_2b11bac2644d4ac5be75ef3456b32a51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30e0507323c14920955309f823c7eafe = $(`<div id="html_30e0507323c14920955309f823c7eafe" style="width: 100.0%; height: 100.0%;">점수는 : 19 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_2b11bac2644d4ac5be75ef3456b32a51.setContent(html_30e0507323c14920955309f823c7eafe);
+        
+
+        circle_marker_550659ddc19d466685c2690fcfd9ad41.bindPopup(popup_2b11bac2644d4ac5be75ef3456b32a51)
+        ;
+
+        
+    
+    
+            var circle_marker_385af42bdc6e4e05a8a756fbacfb7c5b = L.circleMarker(
+                [35.11728313475473, 126.88472522327402],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_fb5d52ebb268415ea515675eca00bd01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fab910f70d2e46c8ae390bf48b8454c4 = $(`<div id="html_fab910f70d2e46c8ae390bf48b8454c4" style="width: 100.0%; height: 100.0%;">점수는 : 11 입니다. {'독서실': '600미터 안에 1개 존재', '도서관': '600미터 안에 1개 존재', '학원': '600미터 안에 2개 존재'}</div>`)[0];
+            popup_fb5d52ebb268415ea515675eca00bd01.setContent(html_fab910f70d2e46c8ae390bf48b8454c4);
+        
+
+        circle_marker_385af42bdc6e4e05a8a756fbacfb7c5b.bindPopup(popup_fb5d52ebb268415ea515675eca00bd01)
+        ;
+
+        
+    
+    
+            var circle_marker_b26260636a8442878cab0a40f88f419b = L.circleMarker(
+                [35.12310706759209, 126.88472522327402],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_d23b144241ad43c0894af8a90d9b3d2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb717a50c267480e86503cba89482cea = $(`<div id="html_fb717a50c267480e86503cba89482cea" style="width: 100.0%; height: 100.0%;">점수는 : 15 입니다. {'독서실': '300미터 안에 1개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_d23b144241ad43c0894af8a90d9b3d2b.setContent(html_fb717a50c267480e86503cba89482cea);
+        
+
+        circle_marker_b26260636a8442878cab0a40f88f419b.bindPopup(popup_d23b144241ad43c0894af8a90d9b3d2b)
+        ;
+
+        
+    
+    
+            var circle_marker_8d16dc8957af40ea8d1a17e758d4416f = L.circleMarker(
+                [35.128931000429446, 126.88472522327402],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_fccfc32edc6540458158ada47ebeba8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4671cdeb06074f16965bc091fbe3ef83 = $(`<div id="html_4671cdeb06074f16965bc091fbe3ef83" style="width: 100.0%; height: 100.0%;">점수는 : 19 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_fccfc32edc6540458158ada47ebeba8a.setContent(html_4671cdeb06074f16965bc091fbe3ef83);
+        
+
+        circle_marker_8d16dc8957af40ea8d1a17e758d4416f.bindPopup(popup_fccfc32edc6540458158ada47ebeba8a)
+        ;
+
+        
+    
+    
+            var circle_marker_6b7240d7300e4cb99428aaa965f4ce60 = L.circleMarker(
+                [35.1347549332668, 126.88472522327402],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_833db4ad926c425bafdd9606a47dc6fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc5cfae9e89340dc8e62bfcb2e777b6e = $(`<div id="html_cc5cfae9e89340dc8e62bfcb2e777b6e" style="width: 100.0%; height: 100.0%;">점수는 : 10 입니다. {'독서실': '600미터 안에 1개 존재', '도서관': '600미터 안에 1개 존재', '학원': '300미터 안에 1개 존재'}</div>`)[0];
+            popup_833db4ad926c425bafdd9606a47dc6fc.setContent(html_cc5cfae9e89340dc8e62bfcb2e777b6e);
+        
+
+        circle_marker_6b7240d7300e4cb99428aaa965f4ce60.bindPopup(popup_833db4ad926c425bafdd9606a47dc6fc)
+        ;
+
+        
+    
+    
+            var circle_marker_e677b0aabdbd409e9113356c958ea569 = L.circleMarker(
+                [35.14057886610416, 126.88472522327402],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_773ab1588f474d059e0df751b20af1d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c758a5093ef4e999bc4db74d519d345 = $(`<div id="html_8c758a5093ef4e999bc4db74d519d345" style="width: 100.0%; height: 100.0%;">점수는 : 21 입니다. {'독서실': '300미터 안에 2개 존재', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_773ab1588f474d059e0df751b20af1d6.setContent(html_8c758a5093ef4e999bc4db74d519d345);
+        
+
+        circle_marker_e677b0aabdbd409e9113356c958ea569.bindPopup(popup_773ab1588f474d059e0df751b20af1d6)
+        ;
+
+        
+    
+    
+            var circle_marker_ecf9022a8f2b4f04858c1dd8c549dda4 = L.circleMarker(
+                [35.14640279894151, 126.88472522327402],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_27485ff45b46443ca8a5b630b4bb4fd4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b9f0ae1a63e4f5d9bcbc176d92e2ab2 = $(`<div id="html_5b9f0ae1a63e4f5d9bcbc176d92e2ab2" style="width: 100.0%; height: 100.0%;">점수는 : 21 입니다. {'독서실': '300미터 안에 2개 존재', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_27485ff45b46443ca8a5b630b4bb4fd4.setContent(html_5b9f0ae1a63e4f5d9bcbc176d92e2ab2);
+        
+
+        circle_marker_ecf9022a8f2b4f04858c1dd8c549dda4.bindPopup(popup_27485ff45b46443ca8a5b630b4bb4fd4)
+        ;
+
+        
+    
+    
+            var circle_marker_6c885a38300446f4a9214a8cc44ffcf6 = L.circleMarker(
+                [35.15222673177887, 126.88472522327402],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_031a3f424bec4b97a17c68abf8e93b55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be851788263545faa5b9abd45741dd83 = $(`<div id="html_be851788263545faa5b9abd45741dd83" style="width: 100.0%; height: 100.0%;">점수는 : 16 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_031a3f424bec4b97a17c68abf8e93b55.setContent(html_be851788263545faa5b9abd45741dd83);
+        
+
+        circle_marker_6c885a38300446f4a9214a8cc44ffcf6.bindPopup(popup_031a3f424bec4b97a17c68abf8e93b55)
+        ;
+
+        
+    
+    
+            var circle_marker_7f7cf05864ce4b809b7a2a6b77074f2c = L.circleMarker(
+                [35.158050664616226, 126.88472522327402],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_f6f162fe814c4b8396cc5e8c0587a14b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b384d48f2b184b2e8f7a2b197b9a336b = $(`<div id="html_b384d48f2b184b2e8f7a2b197b9a336b" style="width: 100.0%; height: 100.0%;">점수는 : 13 입니다. {'독서실': '900미터 안에 없음', '도서관': '600미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_f6f162fe814c4b8396cc5e8c0587a14b.setContent(html_b384d48f2b184b2e8f7a2b197b9a336b);
+        
+
+        circle_marker_7f7cf05864ce4b809b7a2a6b77074f2c.bindPopup(popup_f6f162fe814c4b8396cc5e8c0587a14b)
+        ;
+
+        
+    
+    
+            var circle_marker_8d41197e1e7c4a449d5f629362b3001a = L.circleMarker(
+                [35.16387459745358, 126.88472522327402],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_bfefd9d43dd84d65baab4dfcc86b701d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a35f5a01b9f7488cb7d8cb55dd1d0b09 = $(`<div id="html_a35f5a01b9f7488cb7d8cb55dd1d0b09" style="width: 100.0%; height: 100.0%;">점수는 : 15 입니다. {'독서실': '600미터 안에 1개 존재', '도서관': '600미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_bfefd9d43dd84d65baab4dfcc86b701d.setContent(html_a35f5a01b9f7488cb7d8cb55dd1d0b09);
+        
+
+        circle_marker_8d41197e1e7c4a449d5f629362b3001a.bindPopup(popup_bfefd9d43dd84d65baab4dfcc86b701d)
+        ;
+
+        
+    
+    
+            var circle_marker_3fe9feb4f1444571ae079f48c76cca95 = L.circleMarker(
+                [35.16969853029094, 126.88472522327402],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_ce24cb8ba14e49cd9fc15fd4ef4e4caa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb7819044c6240eb811b606887a42bad = $(`<div id="html_fb7819044c6240eb811b606887a42bad" style="width: 100.0%; height: 100.0%;">점수는 : 16 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_ce24cb8ba14e49cd9fc15fd4ef4e4caa.setContent(html_fb7819044c6240eb811b606887a42bad);
+        
+
+        circle_marker_3fe9feb4f1444571ae079f48c76cca95.bindPopup(popup_ce24cb8ba14e49cd9fc15fd4ef4e4caa)
+        ;
+
+        
+    
+    
+            var circle_marker_5e9360d9ec954ae6b467912f55ff12f5 = L.circleMarker(
+                [35.17552246312829, 126.88472522327402],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_23248a91fe7d435aa867f149465be2a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_391e6a38780941fc99e6684c648c6273 = $(`<div id="html_391e6a38780941fc99e6684c648c6273" style="width: 100.0%; height: 100.0%;">점수는 : 17 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '600미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_23248a91fe7d435aa867f149465be2a7.setContent(html_391e6a38780941fc99e6684c648c6273);
+        
+
+        circle_marker_5e9360d9ec954ae6b467912f55ff12f5.bindPopup(popup_23248a91fe7d435aa867f149465be2a7)
+        ;
+
+        
+    
+    
+            var circle_marker_0672aff49d22432b8be4a87420def5f4 = L.circleMarker(
+                [35.11728313475473, 126.89187308477426],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_abd18da0c8414e7da2b68c766477dce1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdbf44d14fa146639feb1bd0777e8d9c = $(`<div id="html_bdbf44d14fa146639feb1bd0777e8d9c" style="width: 100.0%; height: 100.0%;">점수는 : 13 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '600미터 안에 1개 존재', '학원': '600미터 안에 2개 존재'}</div>`)[0];
+            popup_abd18da0c8414e7da2b68c766477dce1.setContent(html_bdbf44d14fa146639feb1bd0777e8d9c);
+        
+
+        circle_marker_0672aff49d22432b8be4a87420def5f4.bindPopup(popup_abd18da0c8414e7da2b68c766477dce1)
+        ;
+
+        
+    
+    
+            var circle_marker_1bb2534d1a9e42048307c8f7a8180420 = L.circleMarker(
+                [35.12310706759209, 126.89187308477426],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_d93f2866f1e04b77a530eb3f52b25d45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7c81b3aefa7400f84afb39cc6327818 = $(`<div id="html_e7c81b3aefa7400f84afb39cc6327818" style="width: 100.0%; height: 100.0%;">점수는 : 17 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '600미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_d93f2866f1e04b77a530eb3f52b25d45.setContent(html_e7c81b3aefa7400f84afb39cc6327818);
+        
+
+        circle_marker_1bb2534d1a9e42048307c8f7a8180420.bindPopup(popup_d93f2866f1e04b77a530eb3f52b25d45)
+        ;
+
+        
+    
+    
+            var circle_marker_9af3eaa08f0f49dca3c0493d2d0c1e9f = L.circleMarker(
+                [35.128931000429446, 126.89187308477426],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_f7cd9ef2673c46b49b8e827b850e8de4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c9c1a078c2f414a9992503b05c67790 = $(`<div id="html_6c9c1a078c2f414a9992503b05c67790" style="width: 100.0%; height: 100.0%;">점수는 : 21 입니다. {'독서실': '300미터 안에 2개 존재', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_f7cd9ef2673c46b49b8e827b850e8de4.setContent(html_6c9c1a078c2f414a9992503b05c67790);
+        
+
+        circle_marker_9af3eaa08f0f49dca3c0493d2d0c1e9f.bindPopup(popup_f7cd9ef2673c46b49b8e827b850e8de4)
+        ;
+
+        
+    
+    
+            var circle_marker_3af5332ef9c64e13846da9c0e75e0773 = L.circleMarker(
+                [35.1347549332668, 126.89187308477426],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_4fa66c9c552043be8010020e4ad28ccd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ff712b4005a49a289f3570cdc60b910 = $(`<div id="html_2ff712b4005a49a289f3570cdc60b910" style="width: 100.0%; height: 100.0%;">점수는 : 15 입니다. {'독서실': '300미터 안에 1개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_4fa66c9c552043be8010020e4ad28ccd.setContent(html_2ff712b4005a49a289f3570cdc60b910);
+        
+
+        circle_marker_3af5332ef9c64e13846da9c0e75e0773.bindPopup(popup_4fa66c9c552043be8010020e4ad28ccd)
+        ;
+
+        
+    
+    
+            var circle_marker_820466b15c9c426eb129ddbfc1950d3b = L.circleMarker(
+                [35.14057886610416, 126.89187308477426],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_0907178f7bc44141a59e22f65768447d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbd432f4bbcd465abf7c99d0cf06c690 = $(`<div id="html_bbd432f4bbcd465abf7c99d0cf06c690" style="width: 100.0%; height: 100.0%;">점수는 : 15 입니다. {'독서실': '300미터 안에 1개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_0907178f7bc44141a59e22f65768447d.setContent(html_bbd432f4bbcd465abf7c99d0cf06c690);
+        
+
+        circle_marker_820466b15c9c426eb129ddbfc1950d3b.bindPopup(popup_0907178f7bc44141a59e22f65768447d)
+        ;
+
+        
+    
+    
+            var circle_marker_29224d41638847579d7ab8e6f9102249 = L.circleMarker(
+                [35.14640279894151, 126.89187308477426],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_bcec750c21c3466daa010afcf46ac0f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa8681bf35d8430ba9450edf46f3ce43 = $(`<div id="html_fa8681bf35d8430ba9450edf46f3ce43" style="width: 100.0%; height: 100.0%;">점수는 : 18 입니다. {'독서실': '300미터 안에 1개 존재', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_bcec750c21c3466daa010afcf46ac0f6.setContent(html_fa8681bf35d8430ba9450edf46f3ce43);
+        
+
+        circle_marker_29224d41638847579d7ab8e6f9102249.bindPopup(popup_bcec750c21c3466daa010afcf46ac0f6)
+        ;
+
+        
+    
+    
+            var circle_marker_f646e46bfa8f4b8f84b95cf88ab4e3e9 = L.circleMarker(
+                [35.15222673177887, 126.89187308477426],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_8f84fb0f76084ec69d9e4dda1d2552b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9576078cc744463592fdc6b10921158a = $(`<div id="html_9576078cc744463592fdc6b10921158a" style="width: 100.0%; height: 100.0%;">점수는 : 14 입니다. {'독서실': '900미터 안에 2개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_8f84fb0f76084ec69d9e4dda1d2552b0.setContent(html_9576078cc744463592fdc6b10921158a);
+        
+
+        circle_marker_f646e46bfa8f4b8f84b95cf88ab4e3e9.bindPopup(popup_8f84fb0f76084ec69d9e4dda1d2552b0)
+        ;
+
+        
+    
+    
+            var circle_marker_7454e173101f49009ad91579b89ec3eb = L.circleMarker(
+                [35.158050664616226, 126.89187308477426],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_1330578777b545909d7bf5e60181580a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c38c3ee337364ce3955dc1882a0d8a31 = $(`<div id="html_c38c3ee337364ce3955dc1882a0d8a31" style="width: 100.0%; height: 100.0%;">점수는 : 15 입니다. {'독서실': '900미터 안에 없음', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_1330578777b545909d7bf5e60181580a.setContent(html_c38c3ee337364ce3955dc1882a0d8a31);
+        
+
+        circle_marker_7454e173101f49009ad91579b89ec3eb.bindPopup(popup_1330578777b545909d7bf5e60181580a)
+        ;
+
+        
+    
+    
+            var circle_marker_5925e8b232a5437cadc49f30168f5d13 = L.circleMarker(
+                [35.16387459745358, 126.89187308477426],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_e163ab76199e4fddbd6278afb8221eb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da1422525b074b24b09104310bbaa45c = $(`<div id="html_da1422525b074b24b09104310bbaa45c" style="width: 100.0%; height: 100.0%;">점수는 : 14 입니다. {'독서실': '900미터 안에 1개 존재', '도서관': '600미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_e163ab76199e4fddbd6278afb8221eb8.setContent(html_da1422525b074b24b09104310bbaa45c);
+        
+
+        circle_marker_5925e8b232a5437cadc49f30168f5d13.bindPopup(popup_e163ab76199e4fddbd6278afb8221eb8)
+        ;
+
+        
+    
+    
+            var circle_marker_9777ce4622b0419588c530aab90b6955 = L.circleMarker(
+                [35.16969853029094, 126.89187308477426],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_fbe97620a8b1409e944b691684d87409 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f73fe4b9c974e43864d46a0605fb37f = $(`<div id="html_4f73fe4b9c974e43864d46a0605fb37f" style="width: 100.0%; height: 100.0%;">점수는 : 17 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '600미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_fbe97620a8b1409e944b691684d87409.setContent(html_4f73fe4b9c974e43864d46a0605fb37f);
+        
+
+        circle_marker_9777ce4622b0419588c530aab90b6955.bindPopup(popup_fbe97620a8b1409e944b691684d87409)
+        ;
+
+        
+    
+    
+            var circle_marker_48a4bbb5616b4fe8b3893beaa5048aa6 = L.circleMarker(
+                [35.17552246312829, 126.89187308477426],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_4320e69f7cde4094822a30aa055ac3bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4e5b62638e34c8ea684b63eb3fb42ef = $(`<div id="html_e4e5b62638e34c8ea684b63eb3fb42ef" style="width: 100.0%; height: 100.0%;">점수는 : 16 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_4320e69f7cde4094822a30aa055ac3bc.setContent(html_e4e5b62638e34c8ea684b63eb3fb42ef);
+        
+
+        circle_marker_48a4bbb5616b4fe8b3893beaa5048aa6.bindPopup(popup_4320e69f7cde4094822a30aa055ac3bc)
+        ;
+
+        
+    
+    
+            var circle_marker_1eb7e9bf6aac42daacb5862972363417 = L.circleMarker(
+                [35.128931000429446, 126.8990209462745],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_7739cef249c942ad9692994cc0841fba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c03fc2e65a764d8783da8597c660d55c = $(`<div id="html_c03fc2e65a764d8783da8597c660d55c" style="width: 100.0%; height: 100.0%;">점수는 : 17 입니다. {'독서실': '900미터 안에 2개 존재', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_7739cef249c942ad9692994cc0841fba.setContent(html_c03fc2e65a764d8783da8597c660d55c);
+        
+
+        circle_marker_1eb7e9bf6aac42daacb5862972363417.bindPopup(popup_7739cef249c942ad9692994cc0841fba)
+        ;
+
+        
+    
+    
+            var circle_marker_1fa771c59ff4474791eb410e035eb818 = L.circleMarker(
+                [35.1347549332668, 126.8990209462745],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_dc641d78cfe8452a9a9a4865e4ad0b9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ae99e5a2e2646c2add21854a6bf356f = $(`<div id="html_8ae99e5a2e2646c2add21854a6bf356f" style="width: 100.0%; height: 100.0%;">점수는 : 19 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_dc641d78cfe8452a9a9a4865e4ad0b9a.setContent(html_8ae99e5a2e2646c2add21854a6bf356f);
+        
+
+        circle_marker_1fa771c59ff4474791eb410e035eb818.bindPopup(popup_dc641d78cfe8452a9a9a4865e4ad0b9a)
+        ;
+
+        
+    
+    
+            var circle_marker_fc328cdad1e84593b997afe75cb56cc5 = L.circleMarker(
+                [35.14057886610416, 126.8990209462745],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_7f2ff11df9cc4e91bc7d950b2ead1e91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f10173791ee46f78283cce82a3f53dd = $(`<div id="html_8f10173791ee46f78283cce82a3f53dd" style="width: 100.0%; height: 100.0%;">점수는 : 13 입니다. {'독서실': '600미터 안에 2개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 1개 존재'}</div>`)[0];
+            popup_7f2ff11df9cc4e91bc7d950b2ead1e91.setContent(html_8f10173791ee46f78283cce82a3f53dd);
+        
+
+        circle_marker_fc328cdad1e84593b997afe75cb56cc5.bindPopup(popup_7f2ff11df9cc4e91bc7d950b2ead1e91)
+        ;
+
+        
+    
+    
+            var circle_marker_1774d3650e41408d81cdb12c738873ba = L.circleMarker(
+                [35.14640279894151, 126.8990209462745],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_5172b9383e6d4c9787c8279af69ee211 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_343b687491c24fe892afeaaf4223d689 = $(`<div id="html_343b687491c24fe892afeaaf4223d689" style="width: 100.0%; height: 100.0%;">점수는 : 17 입니다. {'독서실': '900미터 안에 2개 존재', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_5172b9383e6d4c9787c8279af69ee211.setContent(html_343b687491c24fe892afeaaf4223d689);
+        
+
+        circle_marker_1774d3650e41408d81cdb12c738873ba.bindPopup(popup_5172b9383e6d4c9787c8279af69ee211)
+        ;
+
+        
+    
+    
+            var circle_marker_441ae8f4714945028074485141bb3586 = L.circleMarker(
+                [35.15222673177887, 126.8990209462745],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_10f288ec5d504bc1a73d838b50cae180 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccb5bffa38cc49bf90fd2cbb2a23188d = $(`<div id="html_ccb5bffa38cc49bf90fd2cbb2a23188d" style="width: 100.0%; height: 100.0%;">점수는 : 11 입니다. {'독서실': '900미터 안에 없음', '도서관': '600미터 안에 2개 존재', '학원': '600미터 안에 2개 존재'}</div>`)[0];
+            popup_10f288ec5d504bc1a73d838b50cae180.setContent(html_ccb5bffa38cc49bf90fd2cbb2a23188d);
+        
+
+        circle_marker_441ae8f4714945028074485141bb3586.bindPopup(popup_10f288ec5d504bc1a73d838b50cae180)
+        ;
+
+        
+    
+    
+            var circle_marker_a549fd4985ac44a99fff3f49eae9c596 = L.circleMarker(
+                [35.158050664616226, 126.8990209462745],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_7f8c08e0f6954705bd46663b073f02ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f41fa086c6f4c38a0ae07090518578e = $(`<div id="html_4f41fa086c6f4c38a0ae07090518578e" style="width: 100.0%; height: 100.0%;">점수는 : 13 입니다. {'독서실': '900미터 안에 없음', '도서관': '600미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_7f8c08e0f6954705bd46663b073f02ba.setContent(html_4f41fa086c6f4c38a0ae07090518578e);
+        
+
+        circle_marker_a549fd4985ac44a99fff3f49eae9c596.bindPopup(popup_7f8c08e0f6954705bd46663b073f02ba)
+        ;
+
+        
+    
+    
+            var circle_marker_eab06187df9940a3a8c546e7400b1860 = L.circleMarker(
+                [35.16387459745358, 126.8990209462745],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_0c4213e758e54e92ab9ef3c494e194db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63cf0f2deeb14a72a694827bf106a47c = $(`<div id="html_63cf0f2deeb14a72a694827bf106a47c" style="width: 100.0%; height: 100.0%;">점수는 : 15 입니다. {'독서실': '900미터 안에 없음', '도서관': '300미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_0c4213e758e54e92ab9ef3c494e194db.setContent(html_63cf0f2deeb14a72a694827bf106a47c);
+        
+
+        circle_marker_eab06187df9940a3a8c546e7400b1860.bindPopup(popup_0c4213e758e54e92ab9ef3c494e194db)
+        ;
+
+        
+    
+    
+            var circle_marker_ba7619d1148949289ef12305e5a9b393 = L.circleMarker(
+                [35.16969853029094, 126.8990209462745],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_374f84490eda46b28b7a50995ad75907 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_256aef739013418e8e04996ad058cfda = $(`<div id="html_256aef739013418e8e04996ad058cfda" style="width: 100.0%; height: 100.0%;">점수는 : 14 입니다. {'독서실': '900미터 안에 2개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_374f84490eda46b28b7a50995ad75907.setContent(html_256aef739013418e8e04996ad058cfda);
+        
+
+        circle_marker_ba7619d1148949289ef12305e5a9b393.bindPopup(popup_374f84490eda46b28b7a50995ad75907)
+        ;
+
+        
+    
+    
+            var circle_marker_4290d817f0974ee8adfbb2123f8dac64 = L.circleMarker(
+                [35.17552246312829, 126.8990209462745],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_26e1b6655628400ea4d47d9e9bdd75ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d100ef38eca244a88d262c34b6c14aff = $(`<div id="html_d100ef38eca244a88d262c34b6c14aff" style="width: 100.0%; height: 100.0%;">점수는 : 15 입니다. {'독서실': '300미터 안에 1개 존재', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_26e1b6655628400ea4d47d9e9bdd75ad.setContent(html_d100ef38eca244a88d262c34b6c14aff);
+        
+
+        circle_marker_4290d817f0974ee8adfbb2123f8dac64.bindPopup(popup_26e1b6655628400ea4d47d9e9bdd75ad)
+        ;
+
+        
+    
+    
+            var circle_marker_0f144154919e4bb19c4e87a1216945fb = L.circleMarker(
+                [35.158050664616226, 126.90616880777476],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_a9c4a2b499534885ac480d9e4a1c5a77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01b4b40296eb49c78b5e63aa842b76cb = $(`<div id="html_01b4b40296eb49c78b5e63aa842b76cb" style="width: 100.0%; height: 100.0%;">점수는 : 12 입니다. {'독서실': '900미터 안에 없음', '도서관': '300미터 안에 1개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_a9c4a2b499534885ac480d9e4a1c5a77.setContent(html_01b4b40296eb49c78b5e63aa842b76cb);
+        
+
+        circle_marker_0f144154919e4bb19c4e87a1216945fb.bindPopup(popup_a9c4a2b499534885ac480d9e4a1c5a77)
+        ;
+
+        
+    
+    
+            var circle_marker_23a9442eb9594049902918eb654b3bcf = L.circleMarker(
+                [35.16387459745358, 126.90616880777476],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(map_6ecc1917de084bb188df026b0b597baf);
+        
+    
+        var popup_53a7dd71f6754c28a687f26676596384 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1e2ef600b424a96a8d3a653463285f9 = $(`<div id="html_a1e2ef600b424a96a8d3a653463285f9" style="width: 100.0%; height: 100.0%;">점수는 : 13 입니다. {'독서실': '900미터 안에 2개 존재', '도서관': '900미터 안에 2개 존재', '학원': '300미터 안에 2개 존재'}</div>`)[0];
+            popup_53a7dd71f6754c28a687f26676596384.setContent(html_a1e2ef600b424a96a8d3a653463285f9);
+        
+
+        circle_marker_23a9442eb9594049902918eb654b3bcf.bindPopup(popup_53a7dd71f6754c28a687f26676596384)
+        ;
+
+        
+    
+</script>
