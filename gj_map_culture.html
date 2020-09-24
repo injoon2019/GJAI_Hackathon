@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b6cb4bf3e4cd4cdc90f3005cccbbcca3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b6cb4bf3e4cd4cdc90f3005cccbbcca3" ></div>
+        
+</body>
+<script>    
+    
+            var map_b6cb4bf3e4cd4cdc90f3005cccbbcca3 = L.map(
+                "map_b6cb4bf3e4cd4cdc90f3005cccbbcca3",
+                {
+                    center: [35.1595, 126.8526],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8a4b2b5f50bb44c68f919bc1c26bb799 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b6cb4bf3e4cd4cdc90f3005cccbbcca3);
+        
+    
+            var marker_cluster_9925ad5e20d74481b7544b1c57c0458d = L.markerClusterGroup(
+                {}
+            );
+            map_b6cb4bf3e4cd4cdc90f3005cccbbcca3.addLayer(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+            var marker_34e2a76fb4f44bfaac23f1150a35f855 = L.marker(
+                [35.1319650021537, 126.859813867488],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_92115c75afb04a629f7d8ef91c834d49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9cab8ef11f2643ca97ea76a7864297c0 = $(`<div id="html_9cab8ef11f2643ca97ea76a7864297c0" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_92115c75afb04a629f7d8ef91c834d49.setContent(html_9cab8ef11f2643ca97ea76a7864297c0);
+        
+
+        marker_34e2a76fb4f44bfaac23f1150a35f855.bindPopup(popup_92115c75afb04a629f7d8ef91c834d49)
+        ;
+
+        
+    
+    
+            var marker_8f4c38da88674ffbb9b501f9ff686369 = L.marker(
+                [35.1896565755909, 126.88395145401],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_647d02ed62fa413dacd1e493f6c82112 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14c3aa55f14f4cf8a8149b11f15b649b = $(`<div id="html_14c3aa55f14f4cf8a8149b11f15b649b" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_647d02ed62fa413dacd1e493f6c82112.setContent(html_14c3aa55f14f4cf8a8149b11f15b649b);
+        
+
+        marker_8f4c38da88674ffbb9b501f9ff686369.bindPopup(popup_647d02ed62fa413dacd1e493f6c82112)
+        ;
+
+        
+    
+    
+            var marker_e081f9736d184f4294295392b278b7ec = L.marker(
+                [35.1769445303182, 126.90454514957],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_407aa03622c3449ebbc68b6b8c427028 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50a4c65b544b42a591c4fe2eeab134e5 = $(`<div id="html_50a4c65b544b42a591c4fe2eeab134e5" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_407aa03622c3449ebbc68b6b8c427028.setContent(html_50a4c65b544b42a591c4fe2eeab134e5);
+        
+
+        marker_e081f9736d184f4294295392b278b7ec.bindPopup(popup_407aa03622c3449ebbc68b6b8c427028)
+        ;
+
+        
+    
+    
+            var marker_ce8f549ac1be435dbd8292e9fba02b5a = L.marker(
+                [35.1649358192569, 126.926055013278],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_dd9bc38766144d5d9430bfeac4639276 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4f3266e73db41cda536b4493fbf458a = $(`<div id="html_e4f3266e73db41cda536b4493fbf458a" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_dd9bc38766144d5d9430bfeac4639276.setContent(html_e4f3266e73db41cda536b4493fbf458a);
+        
+
+        marker_ce8f549ac1be435dbd8292e9fba02b5a.bindPopup(popup_dd9bc38766144d5d9430bfeac4639276)
+        ;
+
+        
+    
+    
+            var marker_85d0719ec7cd48ad929495da6f226caa = L.marker(
+                [35.1832986817714, 126.888552398031],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_840341498c6d42d4a7fc340caf36f9c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38de00a8b4c744e7af7e4ec577283b9a = $(`<div id="html_38de00a8b4c744e7af7e4ec577283b9a" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_840341498c6d42d4a7fc340caf36f9c1.setContent(html_38de00a8b4c744e7af7e4ec577283b9a);
+        
+
+        marker_85d0719ec7cd48ad929495da6f226caa.bindPopup(popup_840341498c6d42d4a7fc340caf36f9c1)
+        ;
+
+        
+    
+    
+            var marker_886ec0996c604eb4b66c272d3162415a = L.marker(
+                [35.2017986202816, 126.898607895061],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_b731cb42eda74884918deb17a06e36ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd1392d02a3b4a90811360f71ef75b46 = $(`<div id="html_cd1392d02a3b4a90811360f71ef75b46" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_b731cb42eda74884918deb17a06e36ac.setContent(html_cd1392d02a3b4a90811360f71ef75b46);
+        
+
+        marker_886ec0996c604eb4b66c272d3162415a.bindPopup(popup_b731cb42eda74884918deb17a06e36ac)
+        ;
+
+        
+    
+    
+            var marker_a3cf982718664d95bace5abe778634c4 = L.marker(
+                [35.1724287086451, 126.909446016539],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_9cd715c2ae034714b7581db2a7f16b0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60a3f3acbe3a47c58e18f16e6b0bdf0f = $(`<div id="html_60a3f3acbe3a47c58e18f16e6b0bdf0f" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_9cd715c2ae034714b7581db2a7f16b0c.setContent(html_60a3f3acbe3a47c58e18f16e6b0bdf0f);
+        
+
+        marker_a3cf982718664d95bace5abe778634c4.bindPopup(popup_9cd715c2ae034714b7581db2a7f16b0c)
+        ;
+
+        
+    
+    
+            var marker_8bcfe1cabcc549c6a750c5e30aa028e8 = L.marker(
+                [35.108505781068, 126.867147322696],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_50161af2afcb4788bf365ea2ae5e2ce2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f7056295a044fccabdd21d32a88042a = $(`<div id="html_3f7056295a044fccabdd21d32a88042a" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_50161af2afcb4788bf365ea2ae5e2ce2.setContent(html_3f7056295a044fccabdd21d32a88042a);
+        
+
+        marker_8bcfe1cabcc549c6a750c5e30aa028e8.bindPopup(popup_50161af2afcb4788bf365ea2ae5e2ce2)
+        ;
+
+        
+    
+    
+            var marker_11dc0322162c40189a0ff3af4fa54cb6 = L.marker(
+                [35.1431653319603, 126.923263854896],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_fab6a38249954051b712eb6dfc842343 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3fcf9866fa6041db8b886c79f2138541 = $(`<div id="html_3fcf9866fa6041db8b886c79f2138541" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_fab6a38249954051b712eb6dfc842343.setContent(html_3fcf9866fa6041db8b886c79f2138541);
+        
+
+        marker_11dc0322162c40189a0ff3af4fa54cb6.bindPopup(popup_fab6a38249954051b712eb6dfc842343)
+        ;
+
+        
+    
+    
+            var marker_c8deb8706abe4c328cfc227ecbb122e9 = L.marker(
+                [35.1548269706022, 126.912881392668],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_c530b7f6a0ac4abba2a46041d41ba7f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a31bde36ec7848da82e31dd0a6fabb58 = $(`<div id="html_a31bde36ec7848da82e31dd0a6fabb58" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_c530b7f6a0ac4abba2a46041d41ba7f1.setContent(html_a31bde36ec7848da82e31dd0a6fabb58);
+        
+
+        marker_c8deb8706abe4c328cfc227ecbb122e9.bindPopup(popup_c530b7f6a0ac4abba2a46041d41ba7f1)
+        ;
+
+        
+    
+    
+            var marker_8d547bcb1f4a4f81a91d421e48d51531 = L.marker(
+                [35.1481025499659, 126.914653967647],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_09efb042679b48a5819c8cf81fdaff86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4443b12cc0d49eaab3fa96ea348b3bb = $(`<div id="html_e4443b12cc0d49eaab3fa96ea348b3bb" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_09efb042679b48a5819c8cf81fdaff86.setContent(html_e4443b12cc0d49eaab3fa96ea348b3bb);
+        
+
+        marker_8d547bcb1f4a4f81a91d421e48d51531.bindPopup(popup_09efb042679b48a5819c8cf81fdaff86)
+        ;
+
+        
+    
+    
+            var marker_ebcc047e31044ec0b29a395d43d79780 = L.marker(
+                [35.1548250212901, 126.912054645724],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_710ad5aa00d747228cf324e14f42062d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef29aaf5c1fb445b86ff9739941791cd = $(`<div id="html_ef29aaf5c1fb445b86ff9739941791cd" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_710ad5aa00d747228cf324e14f42062d.setContent(html_ef29aaf5c1fb445b86ff9739941791cd);
+        
+
+        marker_ebcc047e31044ec0b29a395d43d79780.bindPopup(popup_710ad5aa00d747228cf324e14f42062d)
+        ;
+
+        
+    
+    
+            var marker_102cafd235b64b5fa1404b1aba271302 = L.marker(
+                [35.1548250212901, 126.912054645724],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_03a32da28f6c4fb7acf2d4a4f85d4c73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f35b51bc06424f678c1954a5c11c7eb2 = $(`<div id="html_f35b51bc06424f678c1954a5c11c7eb2" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_03a32da28f6c4fb7acf2d4a4f85d4c73.setContent(html_f35b51bc06424f678c1954a5c11c7eb2);
+        
+
+        marker_102cafd235b64b5fa1404b1aba271302.bindPopup(popup_03a32da28f6c4fb7acf2d4a4f85d4c73)
+        ;
+
+        
+    
+    
+            var marker_b1384466544e4294b6f349b5efce7513 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_06c245c587f5483f9c3eeb1869991a2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_204eecfb5ead460b8548ba90b7bdeab3 = $(`<div id="html_204eecfb5ead460b8548ba90b7bdeab3" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_06c245c587f5483f9c3eeb1869991a2f.setContent(html_204eecfb5ead460b8548ba90b7bdeab3);
+        
+
+        marker_b1384466544e4294b6f349b5efce7513.bindPopup(popup_06c245c587f5483f9c3eeb1869991a2f)
+        ;
+
+        
+    
+    
+            var marker_b50dadc83d3e489e9d1bde7d1ccadab6 = L.marker(
+                [35.1469095192535, 126.914669479355],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_e0308108ce2a497a87fbc31db1312540 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b446ecef2704521aa83da10a10d536e = $(`<div id="html_0b446ecef2704521aa83da10a10d536e" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_e0308108ce2a497a87fbc31db1312540.setContent(html_0b446ecef2704521aa83da10a10d536e);
+        
+
+        marker_b50dadc83d3e489e9d1bde7d1ccadab6.bindPopup(popup_e0308108ce2a497a87fbc31db1312540)
+        ;
+
+        
+    
+    
+            var marker_6c0796f550ef4f9ca3991b410ed994f8 = L.marker(
+                [35.1487762793441, 126.913078902897],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_fad83c7387f8411eb2885d46d6d0dea5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45cad5c648444d3c97ff0ac0cfebf3db = $(`<div id="html_45cad5c648444d3c97ff0ac0cfebf3db" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_fad83c7387f8411eb2885d46d6d0dea5.setContent(html_45cad5c648444d3c97ff0ac0cfebf3db);
+        
+
+        marker_6c0796f550ef4f9ca3991b410ed994f8.bindPopup(popup_fad83c7387f8411eb2885d46d6d0dea5)
+        ;
+
+        
+    
+    
+            var marker_e819418825f545f4acde81f01b74d111 = L.marker(
+                [35.1469166120942, 126.922263677902],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_ed1954d4bc364b8cb3e237f64485e958 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c2440bf8b454e1c820792fc15acc7e4 = $(`<div id="html_5c2440bf8b454e1c820792fc15acc7e4" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_ed1954d4bc364b8cb3e237f64485e958.setContent(html_5c2440bf8b454e1c820792fc15acc7e4);
+        
+
+        marker_e819418825f545f4acde81f01b74d111.bindPopup(popup_ed1954d4bc364b8cb3e237f64485e958)
+        ;
+
+        
+    
+    
+            var marker_bba63e8479a348c0a04919eeed9d170d = L.marker(
+                [35.1543008470655, 126.854407057309],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_989c2f09717f44f9bfcb1760e9d7e5ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0b25acf988e4ba785149ce90574d356 = $(`<div id="html_c0b25acf988e4ba785149ce90574d356" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_989c2f09717f44f9bfcb1760e9d7e5ee.setContent(html_c0b25acf988e4ba785149ce90574d356);
+        
+
+        marker_bba63e8479a348c0a04919eeed9d170d.bindPopup(popup_989c2f09717f44f9bfcb1760e9d7e5ee)
+        ;
+
+        
+    
+    
+            var marker_7eb2dd86b0cd47ab90bd2e1b03f0852d = L.marker(
+                [35.1542865628497, 126.851035029409],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_351e5a063c8e4ad2aee14124968b2c81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5687c02938434e1bab2ffb57bcc7a1a5 = $(`<div id="html_5687c02938434e1bab2ffb57bcc7a1a5" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_351e5a063c8e4ad2aee14124968b2c81.setContent(html_5687c02938434e1bab2ffb57bcc7a1a5);
+        
+
+        marker_7eb2dd86b0cd47ab90bd2e1b03f0852d.bindPopup(popup_351e5a063c8e4ad2aee14124968b2c81)
+        ;
+
+        
+    
+    
+            var marker_143ba20829d94495bc21a2f91dbcd377 = L.marker(
+                [35.1603093657413, 126.880130560138],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_819670f596044f25aec8896ec666ee3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1013820f8a4c40fd8d0e849bea769ceb = $(`<div id="html_1013820f8a4c40fd8d0e849bea769ceb" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_819670f596044f25aec8896ec666ee3c.setContent(html_1013820f8a4c40fd8d0e849bea769ceb);
+        
+
+        marker_143ba20829d94495bc21a2f91dbcd377.bindPopup(popup_819670f596044f25aec8896ec666ee3c)
+        ;
+
+        
+    
+    
+            var marker_677bb5d5a0f943c1a35a1651a13a5406 = L.marker(
+                [35.2215344986691, 126.901972468742],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_9cc1d573892947499ba13b23e09fe93d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04ed560a0d144b93b22f36e2ad8a64bb = $(`<div id="html_04ed560a0d144b93b22f36e2ad8a64bb" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_9cc1d573892947499ba13b23e09fe93d.setContent(html_04ed560a0d144b93b22f36e2ad8a64bb);
+        
+
+        marker_677bb5d5a0f943c1a35a1651a13a5406.bindPopup(popup_9cc1d573892947499ba13b23e09fe93d)
+        ;
+
+        
+    
+    
+            var marker_290b4fb05de44f69a9d3c1e43bb607ea = L.marker(
+                [35.1823597116806, 126.912686134079],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_b10d316d61c74374bef17a5ed7ddf4bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec3c23776c714415a6dea31f67e0c53b = $(`<div id="html_ec3c23776c714415a6dea31f67e0c53b" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_b10d316d61c74374bef17a5ed7ddf4bb.setContent(html_ec3c23776c714415a6dea31f67e0c53b);
+        
+
+        marker_290b4fb05de44f69a9d3c1e43bb607ea.bindPopup(popup_b10d316d61c74374bef17a5ed7ddf4bb)
+        ;
+
+        
+    
+    
+            var marker_4162b1dad44d4af1b405d73bfb5b9881 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_9d1cd10179e24a759aa3977b0ab8f8a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0559203e13d6460987135a1b4864cbf5 = $(`<div id="html_0559203e13d6460987135a1b4864cbf5" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_9d1cd10179e24a759aa3977b0ab8f8a3.setContent(html_0559203e13d6460987135a1b4864cbf5);
+        
+
+        marker_4162b1dad44d4af1b405d73bfb5b9881.bindPopup(popup_9d1cd10179e24a759aa3977b0ab8f8a3)
+        ;
+
+        
+    
+    
+            var marker_5d090afbee24428da5d9689275532833 = L.marker(
+                [35.1629292694819, 126.811511215194],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_b4b1abd9f89c487ebf3feb3795a6ac07 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e616e1461aa41b0896c5397d87af0b6 = $(`<div id="html_1e616e1461aa41b0896c5397d87af0b6" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_b4b1abd9f89c487ebf3feb3795a6ac07.setContent(html_1e616e1461aa41b0896c5397d87af0b6);
+        
+
+        marker_5d090afbee24428da5d9689275532833.bindPopup(popup_b4b1abd9f89c487ebf3feb3795a6ac07)
+        ;
+
+        
+    
+    
+            var marker_f5f806a0a07742ec9f56d6f7c306ad62 = L.marker(
+                [35.2212213167099, 126.852351720897],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_94538bad2d0846fdb34a7538d1075bac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7de5867277e04f5aa7a62cd2918201c1 = $(`<div id="html_7de5867277e04f5aa7a62cd2918201c1" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_94538bad2d0846fdb34a7538d1075bac.setContent(html_7de5867277e04f5aa7a62cd2918201c1);
+        
+
+        marker_f5f806a0a07742ec9f56d6f7c306ad62.bindPopup(popup_94538bad2d0846fdb34a7538d1075bac)
+        ;
+
+        
+    
+    
+            var marker_26686c93899648c28afc90e95e6b80f8 = L.marker(
+                [35.2164709893353, 126.850342469012],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_42933f092f864d2998060ec9f1145445 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb79eab5d9ff495eb697dd3dae315ec2 = $(`<div id="html_eb79eab5d9ff495eb697dd3dae315ec2" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_42933f092f864d2998060ec9f1145445.setContent(html_eb79eab5d9ff495eb697dd3dae315ec2);
+        
+
+        marker_26686c93899648c28afc90e95e6b80f8.bindPopup(popup_42933f092f864d2998060ec9f1145445)
+        ;
+
+        
+    
+    
+            var marker_123b57cfa8e5436f8d94527a8362260a = L.marker(
+                [35.1902198917639, 126.820963611197],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_5f024aa837c74ba985a45d48914ae9de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0c84024ac3f497ca6d7b7a0eec3fe94 = $(`<div id="html_f0c84024ac3f497ca6d7b7a0eec3fe94" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_5f024aa837c74ba985a45d48914ae9de.setContent(html_f0c84024ac3f497ca6d7b7a0eec3fe94);
+        
+
+        marker_123b57cfa8e5436f8d94527a8362260a.bindPopup(popup_5f024aa837c74ba985a45d48914ae9de)
+        ;
+
+        
+    
+    
+            var marker_9a21923a6d7e4465a213606c1c496ddc = L.marker(
+                [35.1599999057961, 126.80964013894],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_2509439c4f4741408fe1044c6bf4f9ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6e5069d3eee488f90ad91f241b7caa7 = $(`<div id="html_a6e5069d3eee488f90ad91f241b7caa7" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_2509439c4f4741408fe1044c6bf4f9ad.setContent(html_a6e5069d3eee488f90ad91f241b7caa7);
+        
+
+        marker_9a21923a6d7e4465a213606c1c496ddc.bindPopup(popup_2509439c4f4741408fe1044c6bf4f9ad)
+        ;
+
+        
+    
+    
+            var marker_a96733806016405d8e2cae27e29ceb49 = L.marker(
+                [35.1832330525449, 126.88573575516],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_c2d41bd549324e0caf354fe79b29a232 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_253c4f62ea664018a00ff41653f63852 = $(`<div id="html_253c4f62ea664018a00ff41653f63852" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_c2d41bd549324e0caf354fe79b29a232.setContent(html_253c4f62ea664018a00ff41653f63852);
+        
+
+        marker_a96733806016405d8e2cae27e29ceb49.bindPopup(popup_c2d41bd549324e0caf354fe79b29a232)
+        ;
+
+        
+    
+    
+            var marker_d0c5cfb1eb0042549ef33356a3ffa389 = L.marker(
+                [35.1495841905104, 126.925712457339],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_4c99e42364f246e4940054a4b3132890 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74a7ef572c3647449b0cb0d995e1cac6 = $(`<div id="html_74a7ef572c3647449b0cb0d995e1cac6" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_4c99e42364f246e4940054a4b3132890.setContent(html_74a7ef572c3647449b0cb0d995e1cac6);
+        
+
+        marker_d0c5cfb1eb0042549ef33356a3ffa389.bindPopup(popup_4c99e42364f246e4940054a4b3132890)
+        ;
+
+        
+    
+    
+            var marker_64de23dac9c64ae687b452a18a321133 = L.marker(
+                [35.1549821571973, 126.888441546954],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_18944a9cc6564ee5a81e811fe81c97c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c277ca62ef8e45e0856ff088610d8b04 = $(`<div id="html_c277ca62ef8e45e0856ff088610d8b04" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_18944a9cc6564ee5a81e811fe81c97c5.setContent(html_c277ca62ef8e45e0856ff088610d8b04);
+        
+
+        marker_64de23dac9c64ae687b452a18a321133.bindPopup(popup_18944a9cc6564ee5a81e811fe81c97c5)
+        ;
+
+        
+    
+    
+            var marker_f8ae794879294be38c6861c60293ed4a = L.marker(
+                [35.1410801043809, 126.914104738228],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_8e5950369ff64f3d98e35aeb85a42b1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55895f4fd1be4392a21b9645bdb2b798 = $(`<div id="html_55895f4fd1be4392a21b9645bdb2b798" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_8e5950369ff64f3d98e35aeb85a42b1b.setContent(html_55895f4fd1be4392a21b9645bdb2b798);
+        
+
+        marker_f8ae794879294be38c6861c60293ed4a.bindPopup(popup_8e5950369ff64f3d98e35aeb85a42b1b)
+        ;
+
+        
+    
+    
+            var marker_6a247d16a7c244b69e613273f0d40e6c = L.marker(
+                [35.1342978601103, 126.953481487731],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_e65c8520342641b9b5a6ab45ea2ec469 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99194c17d7ee4a8395d6d56bfe9dd946 = $(`<div id="html_99194c17d7ee4a8395d6d56bfe9dd946" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_e65c8520342641b9b5a6ab45ea2ec469.setContent(html_99194c17d7ee4a8395d6d56bfe9dd946);
+        
+
+        marker_6a247d16a7c244b69e613273f0d40e6c.bindPopup(popup_e65c8520342641b9b5a6ab45ea2ec469)
+        ;
+
+        
+    
+    
+            var marker_9daa204da7a647fab0be065509a6f92e = L.marker(
+                [35.179564291666, 126.940408154411],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_81add6db6cb741adad863859e07c57f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dacd8641a0f64a6fb8ace4baa9ca6d20 = $(`<div id="html_dacd8641a0f64a6fb8ace4baa9ca6d20" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_81add6db6cb741adad863859e07c57f5.setContent(html_dacd8641a0f64a6fb8ace4baa9ca6d20);
+        
+
+        marker_9daa204da7a647fab0be065509a6f92e.bindPopup(popup_81add6db6cb741adad863859e07c57f5)
+        ;
+
+        
+    
+    
+            var marker_bf6c7eca343044c7b17735681cb135b0 = L.marker(
+                [35.1341820376796, 126.953724150332],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_5aef9b29f5e74671909b254303694592 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe469827a7554b2da684188b12c6eded = $(`<div id="html_fe469827a7554b2da684188b12c6eded" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_5aef9b29f5e74671909b254303694592.setContent(html_fe469827a7554b2da684188b12c6eded);
+        
+
+        marker_bf6c7eca343044c7b17735681cb135b0.bindPopup(popup_5aef9b29f5e74671909b254303694592)
+        ;
+
+        
+    
+    
+            var marker_14233e8a53ba4067ba11081b770978e8 = L.marker(
+                [35.1497647614577, 126.917006559661],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_3a117733091d41c0a259e54d54f413e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc418dc56df445c49d157dd7e3101067 = $(`<div id="html_bc418dc56df445c49d157dd7e3101067" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_3a117733091d41c0a259e54d54f413e4.setContent(html_bc418dc56df445c49d157dd7e3101067);
+        
+
+        marker_14233e8a53ba4067ba11081b770978e8.bindPopup(popup_3a117733091d41c0a259e54d54f413e4)
+        ;
+
+        
+    
+    
+            var marker_06b997c42139488bae19a80ea22e642c = L.marker(
+                [35.1405537085286, 126.912967269505],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_84f61d84ec2f4fc6839b571dd587efbc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3a019bd02534d0497ad74da38960a12 = $(`<div id="html_c3a019bd02534d0497ad74da38960a12" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_84f61d84ec2f4fc6839b571dd587efbc.setContent(html_c3a019bd02534d0497ad74da38960a12);
+        
+
+        marker_06b997c42139488bae19a80ea22e642c.bindPopup(popup_84f61d84ec2f4fc6839b571dd587efbc)
+        ;
+
+        
+    
+    
+            var marker_e9c40ca847784be88333d082bb0d3208 = L.marker(
+                [35.0886560132632, 126.865166791809],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_9582e79990d74e7f9d728f839e5ae2f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bbf5a81e4934189bab76216a9889670 = $(`<div id="html_1bbf5a81e4934189bab76216a9889670" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_9582e79990d74e7f9d728f839e5ae2f8.setContent(html_1bbf5a81e4934189bab76216a9889670);
+        
+
+        marker_e9c40ca847784be88333d082bb0d3208.bindPopup(popup_9582e79990d74e7f9d728f839e5ae2f8)
+        ;
+
+        
+    
+    
+            var marker_5c08ca04acc84decaff302ace7e46b2b = L.marker(
+                [35.1369072609304, 126.915664600687],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_4e463e8d605646d1ab651ebad1117ec0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92912e7e588144ee9a67e6476e8551ae = $(`<div id="html_92912e7e588144ee9a67e6476e8551ae" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_4e463e8d605646d1ab651ebad1117ec0.setContent(html_92912e7e588144ee9a67e6476e8551ae);
+        
+
+        marker_5c08ca04acc84decaff302ace7e46b2b.bindPopup(popup_4e463e8d605646d1ab651ebad1117ec0)
+        ;
+
+        
+    
+    
+            var marker_0c470f0211f442c48ddcaba524b8a125 = L.marker(
+                [35.1318923562165, 126.936521091447],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_c2b7bb6eb42743c1877db015be3c8a99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b6836f22609419ea61a9cc4bc0ff2d1 = $(`<div id="html_2b6836f22609419ea61a9cc4bc0ff2d1" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_c2b7bb6eb42743c1877db015be3c8a99.setContent(html_2b6836f22609419ea61a9cc4bc0ff2d1);
+        
+
+        marker_0c470f0211f442c48ddcaba524b8a125.bindPopup(popup_c2b7bb6eb42743c1877db015be3c8a99)
+        ;
+
+        
+    
+    
+            var marker_5ebd9cce224b48648948aeac406ebbb6 = L.marker(
+                [35.1532752159911, 126.936574836487],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_bbd333a9122144c081513a2be86010e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92d0d43798ef48bb938bd83ef3e4eb87 = $(`<div id="html_92d0d43798ef48bb938bd83ef3e4eb87" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_bbd333a9122144c081513a2be86010e5.setContent(html_92d0d43798ef48bb938bd83ef3e4eb87);
+        
+
+        marker_5ebd9cce224b48648948aeac406ebbb6.bindPopup(popup_bbd333a9122144c081513a2be86010e5)
+        ;
+
+        
+    
+    
+            var marker_4d86ada02d4846dc916015e44e30af14 = L.marker(
+                [35.1451802371041, 126.919108075396],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_11f3f4efb29d431fad908f38917fe0a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a579c219c0184000848d82f041f2ec21 = $(`<div id="html_a579c219c0184000848d82f041f2ec21" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_11f3f4efb29d431fad908f38917fe0a7.setContent(html_a579c219c0184000848d82f041f2ec21);
+        
+
+        marker_4d86ada02d4846dc916015e44e30af14.bindPopup(popup_11f3f4efb29d431fad908f38917fe0a7)
+        ;
+
+        
+    
+    
+            var marker_a798ee96abe94e01ad995d53f6750d37 = L.marker(
+                [35.1490585913887, 126.917735199072],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_602dbfe7c49f4b69bc1fda01d764768f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62ecee7255d94a7ebac4f18528e1145a = $(`<div id="html_62ecee7255d94a7ebac4f18528e1145a" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_602dbfe7c49f4b69bc1fda01d764768f.setContent(html_62ecee7255d94a7ebac4f18528e1145a);
+        
+
+        marker_a798ee96abe94e01ad995d53f6750d37.bindPopup(popup_602dbfe7c49f4b69bc1fda01d764768f)
+        ;
+
+        
+    
+    
+            var marker_72e7d69cca384b0db66848f92768d658 = L.marker(
+                [35.2222280689038, 126.844251438999],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_58ae1fc225b448839f801c9aec3191a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c7573440d7e4629ba3ae9c73ed431b8 = $(`<div id="html_9c7573440d7e4629ba3ae9c73ed431b8" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_58ae1fc225b448839f801c9aec3191a7.setContent(html_9c7573440d7e4629ba3ae9c73ed431b8);
+        
+
+        marker_72e7d69cca384b0db66848f92768d658.bindPopup(popup_58ae1fc225b448839f801c9aec3191a7)
+        ;
+
+        
+    
+    
+            var marker_88d5cedc2e3a47c2862bd8ce79992ad3 = L.marker(
+                [35.1500134570187, 126.920654631593],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_8d56a632e0bb47069bd3a874c7868831 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a34e5aa327d948ca9a7e16a100111dd2 = $(`<div id="html_a34e5aa327d948ca9a7e16a100111dd2" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_8d56a632e0bb47069bd3a874c7868831.setContent(html_a34e5aa327d948ca9a7e16a100111dd2);
+        
+
+        marker_88d5cedc2e3a47c2862bd8ce79992ad3.bindPopup(popup_8d56a632e0bb47069bd3a874c7868831)
+        ;
+
+        
+    
+    
+            var marker_246f2d30aeb3432cbf8cc6ab7767efaa = L.marker(
+                [35.1485758947151, 126.917047932265],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_3ad3d9e821134d9fb0a42ae3da06b646 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34eb0a20f1d84aa78c4f6e727c13128d = $(`<div id="html_34eb0a20f1d84aa78c4f6e727c13128d" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_3ad3d9e821134d9fb0a42ae3da06b646.setContent(html_34eb0a20f1d84aa78c4f6e727c13128d);
+        
+
+        marker_246f2d30aeb3432cbf8cc6ab7767efaa.bindPopup(popup_3ad3d9e821134d9fb0a42ae3da06b646)
+        ;
+
+        
+    
+    
+            var marker_586c8b0dd69e49cfa44db090ef5670ff = L.marker(
+                [35.1437838260601, 126.907016826776],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_4fc4e2424c0f4d48b7beb7a9054b4b84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_588875a92dfe471aac14a57e9574cfe9 = $(`<div id="html_588875a92dfe471aac14a57e9574cfe9" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_4fc4e2424c0f4d48b7beb7a9054b4b84.setContent(html_588875a92dfe471aac14a57e9574cfe9);
+        
+
+        marker_586c8b0dd69e49cfa44db090ef5670ff.bindPopup(popup_4fc4e2424c0f4d48b7beb7a9054b4b84)
+        ;
+
+        
+    
+    
+            var marker_f69e49709e1c4103a2bb4d9e0c85dcee = L.marker(
+                [35.1210851789301, 126.920617418126],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_90fd10d26ee24aff997358cf5911649c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37a82cb4f75f4e8db7f9d16889f87216 = $(`<div id="html_37a82cb4f75f4e8db7f9d16889f87216" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_90fd10d26ee24aff997358cf5911649c.setContent(html_37a82cb4f75f4e8db7f9d16889f87216);
+        
+
+        marker_f69e49709e1c4103a2bb4d9e0c85dcee.bindPopup(popup_90fd10d26ee24aff997358cf5911649c)
+        ;
+
+        
+    
+    
+            var marker_e8b3f6544fe5475892334b6ee0097ba5 = L.marker(
+                [35.0698594660286, 126.835515205064],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_a4677886d30e4a348db62ff7784d6cad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03d2b882161b4220a3b4cf7c335e33ea = $(`<div id="html_03d2b882161b4220a3b4cf7c335e33ea" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_a4677886d30e4a348db62ff7784d6cad.setContent(html_03d2b882161b4220a3b4cf7c335e33ea);
+        
+
+        marker_e8b3f6544fe5475892334b6ee0097ba5.bindPopup(popup_a4677886d30e4a348db62ff7784d6cad)
+        ;
+
+        
+    
+    
+            var marker_23d6e16fc9d1498091e8ab80f8e1f52c = L.marker(
+                [35.1553445315976, 126.919800202671],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_f865f84435c54ca6b4e8182f35d23444 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_baf16e38ca334457b45332bc724dc9dc = $(`<div id="html_baf16e38ca334457b45332bc724dc9dc" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_f865f84435c54ca6b4e8182f35d23444.setContent(html_baf16e38ca334457b45332bc724dc9dc);
+        
+
+        marker_23d6e16fc9d1498091e8ab80f8e1f52c.bindPopup(popup_f865f84435c54ca6b4e8182f35d23444)
+        ;
+
+        
+    
+    
+            var marker_c8871c3e2b5b4e6dba398ec3f5146d44 = L.marker(
+                [35.1804893866834, 126.720909545223],
+                {}
+            ).addTo(marker_cluster_9925ad5e20d74481b7544b1c57c0458d);
+        
+    
+        var popup_84c47cd092a94e1983df1aace1840d93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba549102d6ea4b8b90fbd1375ded669a = $(`<div id="html_ba549102d6ea4b8b90fbd1375ded669a" style="width: 100.0%; height: 100.0%;">반경 1km내 영화관: 1개 미술관 1개 박물관 0개 문화지수 76</div>`)[0];
+            popup_84c47cd092a94e1983df1aace1840d93.setContent(html_ba549102d6ea4b8b90fbd1375ded669a);
+        
+
+        marker_c8871c3e2b5b4e6dba398ec3f5146d44.bindPopup(popup_84c47cd092a94e1983df1aace1840d93)
+        ;
+
+        
+    
+</script>
