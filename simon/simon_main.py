@@ -77,11 +77,12 @@ def main():
     dic_all_centroid, list_dic_geo  = get_centorid_data(div_num=divide_num)
 
     # get centroid for distance info -------------------------------------
-    user_district = "서구"
+
+    user_district = "동구"
 
     list_centroid = dic_all_centroid[user_district]["centroids"]
 
-    dic_all_gather = gather_data_from_cent(list_centroid, user_district, False)
+    dic_all_gather = gather_data_from_cent(list_centroid, user_district, True)
 
     # dic_all_result["list_dong_name"] = list_dong_name
     # dic_all_result["list_sum_all_grade"] = list_sum_all_grade
@@ -117,9 +118,11 @@ def main():
 
         folium.Popup(text, max_width=500,)
         x, y = list_centroid[idx][0], list_centroid[idx][1]
-
-        folium.CircleMarker([x, y], popup=text,
-                            icon=folium.Icon(color=color),
+        popup = folium.Popup(text,
+                             min_width=500,
+                             max_width=500)
+        folium.CircleMarker([x, y], popup=popup,
+                            color=color,
                             radius= size,
                             fill=True,
                             fill_color=color
