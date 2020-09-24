@@ -9,17 +9,18 @@ from folium.plugins import MarkerCluster
 import kakao_function
 import centroid
 from gather_data import gather_data_from_cent
+from draw import draw_map
 
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
 
-def get_centorid_data():
+def get_centorid_data(div_num=15):
     # 구별 위치 정보 든 geo json 불러옴 --------------------------------------
     with open("korea_seperate_gu.json", encoding="utf-8-sig") as file:
-        json_geo_data = json.load(file)
+        json_geo = json.load(file)
 
     list_dic_geo = []
-    for dic_data in json_geo_data["features"]:
+    for dic_data in json_geo["features"]:
         # 전국 데이터에서 광주 구별 데이터만 ID로 가져옴.
         if dic_data["properties"]["SIG_CD"] in ["29170", "29200", "29140", "29155", "29110"]:
             list_dic_geo.append(dic_data)
@@ -28,13 +29,11 @@ def get_centorid_data():
     # 각 구별로 계산 --------------------------------------
     for dic_distrcit_data in list_dic_geo:
         name = dic_distrcit_data["properties"]["SIG_KOR_NM"] # 남구 동구...
-        # if name != "남구":
-        #     continue
 
-        dic_result = centroid.all_centroied_poses_of_district(dic_distrcit_data, div_num=15)
+        dic_result = centroid.all_centroied_poses_of_district(dic_distrcit_data, div_num=div_num)
         dic_all_centroid[name] = dic_result
 
-    return dic_all_centroid
+    return dic_all_centroid, list_dic_geo
 
 def main():
     # DATA public library -------------------------------------
@@ -57,37 +56,79 @@ def main():
     map_cluster_small_lib = folium.plugins.MarkerCluster()
 
 
-    # MARKER - republic library -------------------------------------
-    for idx in range(len(df_republic_lib)):
-        series = df_republic_lib.loc[idx,:]
-        marker = folium.Marker([series["위도"], series["경도"]],
-                               popup=series["도서관명"],icon=folium.Icon(icon='book', color='red'))
-        map_cluster_republic_lib.add_child(marker)
-        map.add_child(map_cluster_republic_lib)
+    # # MARKER - republic library -------------------------------------
+    # for idx in range(len(df_republic_lib)):
+    #     series = df_republic_lib.loc[idx,:]
+    #     marker = folium.Marker([series["위도"], series["경도"]],
+    #                            popup=series["도서관명"],icon=folium.Icon(icon='book', color='red'))
+    #     map_cluster_republic_lib.add_child(marker)
+    #     map.add_child(map_cluster_republic_lib)
+    #
+    # # MARKER - small library -------------------------------------
+    # for idx in range(len(df_small_library)):
+    #     series = df_small_library.loc[idx,:]
+    #     marker = folium.Marker([series["위도"], series["경도"]],
+    #                            popup=series["도서관명"],icon=folium.Icon(icon='book', color='green'))
+    #     map_cluster_small_lib.add_child(marker)
+    #     map.add_child(map_cluster_small_lib)
 
-    # MARKER - small library -------------------------------------
-    for idx in range(len(df_small_library)):
-        series = df_small_library.loc[idx,:]
-        marker = folium.Marker([series["위도"], series["경도"]],
-                               popup=series["도서관명"],icon=folium.Icon(icon='book', color='green'))
-        map_cluster_small_lib.add_child(marker)
-        map.add_child(map_cluster_small_lib)
+    # CREATE centroid -------------------------------------
+    divide_num = 15
+    dic_all_centroid, list_dic_geo  = get_centorid_data(div_num=divide_num)
 
-    # CREATE centroid
-    dic_all_centroid = get_centorid_data()
+    # get centroid for distance info -------------------------------------
+    user_district = "서구"
+
+    list_centroid = dic_all_centroid[user_district]["centroids"]
+
+    dic_all_gather = gather_data_from_cent(list_centroid, user_district, False)
+
+    # dic_all_result["list_dong_name"] = list_dong_name
+    # dic_all_result["list_sum_all_grade"] = list_sum_all_grade
+    # dic_all_result["list_dic_text_info"] = list_dic_text_info
+
+    # MAX
+    max_grade = 0
+    for grade in dic_all_gather["list_sum_all_grade"]:
+        if grade == None:
+            continue
+        if max_grade < grade:
+            max_grade = grade
 
 
-    # TEST ----------  centroid
-    user_district = "남구"
-    for x, y in dic_all_centroid[user_district]["centroids"]:
-        folium.CircleMarker([x, y], popup=user_district, icon=folium.Icon(color='blue'),
-                            radius=dic_all_centroid[user_district]["x_y_radius_dis"][0] * 0.01).add_to(map)
+    for idx in range(len(list_centroid)):
+        if dic_all_gather["list_sum_all_grade"][idx] == None:
+            continue
+        grade = dic_all_gather["list_sum_all_grade"][idx]
+        ratio_grade = grade / max_grade
+
+        color = None
+        if ratio_grade < 0.3:
+            color = "lightgreen"
+        elif ratio_grade < 0.7:
+            color = "green"
+        else:
+            color = "darkgreen"
+
+        size = grade
+        if size == 0:
+            size = 0.5
+        text = f"점수는 : {grade} 입니다. {dic_all_gather['list_dic_text_info'][idx]}"
+
+        folium.Popup(text, max_width=500,)
+        x, y = list_centroid[idx][0], list_centroid[idx][1]
+
+        folium.CircleMarker([x, y], popup=text,
+                            icon=folium.Icon(color=color),
+                            radius= size,
+                            fill=True,
+                            fill_color=color
+                            ).add_to(map)
+
+    # draw_map(list_dic_geo, list_centroid, user_district, divide_num, dic_result_gather_data)
 
 
-    result = gather_data_from_cent(dic_all_centroid[user_district]["centroids"], user_district)
-
-
-    # map.save("map.html")
+    map.save(f"{user_district}_map.html")
 
     print("DONE!!!")
 

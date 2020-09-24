@@ -162,3 +162,4 @@ def final_grading(center_point_list):
         point_grade_dict_list.append(point_grade_dict)
         dong_name_list.append(dong_name)
     return [total_grade_list, point_grade_dict_list, dong_name_list]
+
