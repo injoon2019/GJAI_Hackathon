@@ -8,4 +8,16 @@
 #### 데이터 출처: 공공데이터 (https://www.data.go.kr/tcs/dss/selectStdDataDetailView.do), 
 #### 카카오 API (https://developers.kakao.com/docs/latest/ko/kakaologin/rest-api)
 
-  
+### 공공 데이터 
+  ![ex_screenshot](./images/데이터.PNG)
+
+### 데이터 처리 
+  ![ex_screenshot](./images/데이터2.PNG)
+  ![ex_screenshot](./images/데이터3.PNG)
+  ![ex_screenshot](./images/데이터4.PNG)
+  ![ex_screenshot](./images/데이터5.PNG)
+
+### 계획했던 웹 디자인
+  ![ex_screenshot](./images/디자인.PNG)
+  ![ex_screenshot](./images/공부.PNG)
+  ![ex_screenshot](./images/데이터5.PNG)
