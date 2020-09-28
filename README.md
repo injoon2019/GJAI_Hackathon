@@ -21,7 +21,7 @@
 
 ## Folium을 이용한 지도에 표시 
   ![ex_screenshot](./images/공부.png)
-  ![ex_screenshot](./images/.png)
+  ![ex_screenshot](./images/보안등.png)
 
 
 ## 계획했던 웹 디자인
