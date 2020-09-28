@@ -18,6 +18,6 @@
   ![ex_screenshot](./images/데이터5.PNG)
 
 ### 계획했던 웹 디자인
-  ![ex_screenshot](./images/디자인.PNG)
-  ![ex_screenshot](./images/공부.PNG)
-  ![ex_screenshot](./images/데이터5.PNG)
+  ![ex_screenshot](./images/디자인.png)
+  ![ex_screenshot](./images/공부.png)
+  ![ex_screenshot](./images/.png)
